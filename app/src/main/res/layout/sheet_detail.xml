@@ -1,0 +1,221 @@
+<TableLayout android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="30dp"
+    android:gravity="center_horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:layout_marginBottom="10dp"
+        android:paddingTop="@dimen/mini_margin">
+    <TextView
+        style="@style/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_marginEnd="@dimen/little_margin"
+        android:gravity="start"
+        android:text="@string/label_total_row"
+        android:textColor="@color/colormain"
+        android:textSize="@dimen/title_text_size" />
+    <TextView
+        style="@style/subtitle_text"
+        android:layout_column="1"
+        android:id="@+id/total_row_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/title_text_size"
+        android:textColor="@android:color/white"
+
+        />
+    </TableRow>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:layout_marginBottom="10dp"
+        android:paddingTop="@dimen/mini_margin">
+        <TextView
+            style="@style/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_marginEnd="@dimen/little_margin"
+            android:gravity="start"
+            android:text="@string/label_claimamt"
+            android:textColor="@color/colormain"
+            android:textSize="@dimen/title_text_size" />
+        <TextView
+            style="@style/subtitle_text"
+            android:layout_column="1"
+            android:id="@+id/claimamnt_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/title_text_size"
+            android:textColor="@android:color/white"
+
+            />
+
+
+
+    </TableRow>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:gravity="bottom"
+        android:paddingTop="@dimen/mini_margin">
+
+        <TextView
+            style="@style/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_marginEnd="@dimen/little_margin"
+            android:gravity="start"
+            android:text="@string/label_differenceamt"
+            android:textColor="@color/colormain"
+
+            android:textSize="@dimen/title_text_size" />
+
+        <TextView
+            android:id="@+id/diffamnt_tv"
+            style="@style/subtitle_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/title_text_size"
+            android:textColor="@android:color/white"
+            />
+    </TableRow>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:paddingTop="@dimen/mini_margin"
+        android:layout_marginBottom="10dp"
+        >
+
+        <TextView
+            android:id="@+id/tvCardIdLabel"
+            style="@style/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_marginEnd="@dimen/little_margin"
+            android:gravity="start"
+            android:textColor="@color/colormain"
+
+            android:text="@string/label_systemamt"
+            android:textSize="@dimen/title_text_size" />
+
+        <TextView
+            android:id="@+id/sysamount_tv"
+            style="@style/subtitle_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/title_text_size"
+            android:textColor="@android:color/white"
+
+            />
+    </TableRow>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:paddingTop="@dimen/mini_margin"
+        android:layout_marginBottom="10dp"
+        >
+
+        <TextView
+            style="@style/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_marginEnd="@dimen/little_margin"
+            android:gravity="start"
+            android:textColor="@color/colormain"
+
+            android:text="@string/label_medicine_count"
+            android:textSize="@dimen/title_text_size" />
+
+        <TextView
+            android:id="@+id/medicine_count_tv"
+            style="@style/subtitle_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/title_text_size"
+            android:textColor="@android:color/white"
+
+            />
+    </TableRow>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:paddingBottom="@dimen/mini_margin"
+        android:paddingTop="@dimen/mini_margin"
+        >
+
+        <TextView
+            style="@style/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_marginEnd="@dimen/little_margin"
+            android:gravity="start"
+            android:textColor="@color/colormain"
+
+            android:text="@string/label_agreement"
+            android:textSize="@dimen/title_text_size" />
+
+        <TextView
+            android:id="@+id/agreemnet_tv"
+            style="@style/subtitle_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/title_text_size"
+            android:textColor="@android:color/white"
+
+            />
+    </TableRow>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+<LinearLayout
+    android:id="@+id/reason_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"/>
+</TableLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  >
+    <include layout="@layout/header_toolbar"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sms_phone"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_small"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/msg_sms_sent"
+        android:padding="@dimen/margin_small"/>
+    <TextView
+        android:id="@+id/phoneTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_size_medium"
+        android:gravity="center"
+        android:textColor="@color/colormain"
+        android:layout_marginBottom="@dimen/margin_small"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="@string/hint_verification_code"
+        android:id="@+id/verfiy_et"
+        android:layout_margin="@dimen/margin_medium"
+         android:maxLines="1"
+        android:background="@drawable/rect_view"
+        android:padding="4dp"
+
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_not_sms_recived"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/colorAccentRed"
+        android:gravity="center_vertical"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/resend_code"
+        android:text="@string/action_resnd_cdoe"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/colorAccentGreen"
+        android:drawableLeft="@drawable/ic_refresh_black_24dp"
+        android:gravity="center_vertical"
+        android:layout_margin="@dimen/margin_small"/>
+
+    <Button
+        android:id="@+id/verfiy_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/action_verfiy"
+        android:padding="@dimen/margin_medium"
+        android:background="#003456"
+        android:textColor="@color/white_color"
+        android:layout_marginBottom="@dimen/margin_medium"/>
+
+
+</LinearLayout>

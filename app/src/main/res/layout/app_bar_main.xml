@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:frisson="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/fragment_home_appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <com.intrusoft.library.FrissonView
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            frisson:alphaValue="50"
+            frisson:tintColor="@color/colormain"
+            frisson:gradientType="radial"
+            frisson:gradient_endColor="@color/grey_bg"
+            frisson:gradient_startColor="#00000000"
+            frisson:src="@drawable/bg_people"
+            frisson:tideCount="2"
+            frisson:tideHeight="60dp"
+           />
+<!--
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            android:background="@drawable/bg_people"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:statusBarScrim="@null">-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="24dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+               >
+                <FrameLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+                <com.dmsegypt.dms.ux.custom_view.CircleImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:id="@+id/user_image"
+                    android:src="@drawable/userprofile"
+                    android:scaleType="centerCrop"
+                    />
+                    <ProgressBar
+                        android:visibility="gone"
+                        android:layout_gravity="center"
+                        android:id="@+id/mprogress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        />
+                </FrameLayout>
+                <TextView
+                    android:layout_marginBottom="30dp"
+                    android:id="@+id/toolbar_full_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/title_text_size"
+                    android:layout_gravity="bottom"
+                    android:fontFamily="casual"
+                    android:text="@string/username"
+                    android:paddingStart="10dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/mainToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_scrollFlags="scroll|snap|enterAlways"
+                app:navigationIcon="@drawable/ic_toolbar_menu_light"
+                app:title=" "
+                app:layout_collapseMode="pin"
+                tools:ignore="UnusedAttribute" />
+
+          <!--  </android.support.design.widget.CollapsingToolbarLayout> -->
+
+        </RelativeLayout>
+</LinearLayout>
+    </android.support.design.widget.AppBarLayout>
+  <!--  <android.support.v7.widget.Toolbar
+        android:id="@+id/mainToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_collapseMode="pin"
+        app:popupTheme="@style/AppTheme.PopupOverlay"/>
+-->
+<!--
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/mainToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colormain"
+            app:layout_scrollFlags="scroll|snap|enterAlways"
+            app:navigationIcon="@drawable/ic_toolbar_menu_light"
+            app:title=" "
+            tools:ignore="UnusedAttribute" />
+
+-->
+
+        <LinearLayout
+            android:id="@+id/llHeaderContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+<!--
+        <android.support.design.widget.TabLayout
+            android:id="@+id/fragment_home_tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tab_layout_height"
+            android:visibility="gone"
+            app:tabIndicatorColor="?attr/title_color"
+            app:tabIndicatorHeight="3dp"
+            app:tabSelectedTextColor="?attr/content_color"
+            app:tabTextColor="?attr/subtitle_color" />
+            -->
+
+    <FrameLayout
+        android:layout_below="@id/fragment_home_appBar"
+        android:layout_above="@+id/linearcontact"
+        android:id="@+id/flMainContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <LinearLayout
+        android:id="@+id/linearcontact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colormain"
+        android:layout_alignParentBottom="true"
+        >
+        <TextView
+
+            android:padding="@dimen/big_margin"
+            android:id="@+id/tv_number"
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/ic_phone"
+            android:textColor="@color/mdtp_white"
+            android:textSize="@dimen/title_text_size"
+            android:textStyle="bold"
+            android:text="@string/callus"
+            android:paddingStart="@dimen/mini_padding"
+            android:layout_gravity="start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

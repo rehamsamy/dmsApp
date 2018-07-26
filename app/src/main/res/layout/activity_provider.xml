@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_provider_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    tools:context="com.dmsegypt.dms.ux.activity.ProviderActivity">
+
+
+
+
+    <com.dmsegypt.dms.ux.custom_view.SwipeBackCoordinatorLayout
+
+        android:id="@+id/activity_provider_swipeBackView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:transitionName="@string/transition_photo_background"
+        tools:ignore="MissingConstraints,UnusedAttribute"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <com.dmsegypt.dms.ux.custom_view.freedomSizeView.FreedomImageView
+            android:id="@+id/activity_provider_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorTextGrey2nd"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:src="@drawable/no_image"
+            android:transitionName="@string/transition_photo_image"
+            app:fiv_cover_mode="true"
+            app:layout_behavior=".ux.behavior.PhotoCoverBehavior"
+            tools:ignore="UnusedAttribute" />
+
+        <com.dmsegypt.dms.ux.custom_view.coordinatorView.StatusBarView
+            android:id="@+id/activity_provider_statusBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0"
+            android:background="?attr/colorPrimaryDark" />
+
+      <include layout="@layout/content_provider"/>
+    </com.dmsegypt.dms.ux.custom_view.SwipeBackCoordinatorLayout>
+
+</RelativeLayout>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/mr_dialog_close_light"
+        android:id="@+id/button_close"/>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.dmsegypt.dms.ux.activity.AfterSalesActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp"
+        >
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tinputVisitNumber"
+            android:textColorHint="@color/colorTextContent_light"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:paddingLeft="10dp">
+
+            <EditText
+                android:textColor="@color/colorTextContent_light"
+                android:id="@+id/visit_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Visit Number"
+                android:textSize="@dimen/title_text_size"
+                android:paddingTop="@dimen/text_padding"
+                android:maxLength="14"
+                android:maxLines="1"
+                android:drawableLeft="@drawable/ic_cardid_36dp"
+                android:drawablePadding="10dp">
+
+            </EditText>
+        </android.support.design.widget.TextInputLayout>
+
+        <com.jaredrummler.materialspinner.MaterialSpinner
+            android:id="@+id/companyNameSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Company Name"
+            android:layout_marginBottom="@dimen/margin_small"/>
+
+        <com.dmsegypt.dms.ux.custom_view.ProgressableSpinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/branshSpinner"
+            android:layout_marginBottom="@dimen/margin_small"
+            />
+
+
+        <com.dmsegypt.dms.ux.custom_view.ProgressableSpinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/employeeNameSpinner"
+            />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tinputContactPersonName"
+            android:textColorHint="@color/colorTextContent_light"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:paddingLeft="10dp"
+            android:layout_marginBottom="@dimen/margin_small">
+
+            <EditText
+                android:textColor="@color/colorTextContent_light"
+                android:id="@+id/contact_person_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Contact Person"
+                android:textSize="@dimen/title_text_size"
+                android:paddingTop="@dimen/text_padding"
+                android:maxLength="14"
+                android:maxLines="1"
+                android:drawableLeft="@drawable/ic_person_36dp"
+                android:drawablePadding="10dp"></EditText>
+        </android.support.design.widget.TextInputLayout>
+
+        <com.dmsegypt.dms.ux.custom_view.ProgressableSpinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/visit_reasone_spinner"
+            android:layout_marginBottom="@dimen/margin_small"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:orientation="horizontal"
+>
+
+            <EditText
+                android:id="@+id/visitDateET"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/normal_widget_size"
+                android:layout_marginEnd="-4dp"
+                android:layout_marginRight="-4dp"
+                android:layout_weight="2"
+                android:background="@drawable/bg_corner_edit"
+                android:enabled="false"
+                android:gravity="center"
+                android:hint="Visit Date AND Time"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/visit_date_btn"
+                android:layout_width="@dimen/normal_widget_size"
+                android:layout_height="@dimen/normal_widget_size"
+                android:background="@drawable/bg_corner_btn"
+                android:src="@drawable/ic_date_white_24dp" />
+        </LinearLayout>
+
+
+
+        <EditText
+            android:textColor="@color/colorTextContent_light"
+            android:id="@+id/feedbackET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Feedback"
+            android:textSize="@dimen/title_text_size"
+            android:paddingTop="@dimen/text_padding"
+            android:paddingLeft="@dimen/text_padding"
+            android:maxLength="14"
+            android:maxLines="5"></EditText>
+        <Button
+            android:id="@+id/addAfterSalesBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_button"
+            android:text="Submit"
+            android:textStyle="bold" />
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

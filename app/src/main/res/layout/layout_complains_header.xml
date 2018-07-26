@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llHomeHeader"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:baselineAligned="false"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:ignore="ContentDescription">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tab_layout_height"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <com.jaredrummler.materialspinner.MaterialSpinner
+            android:id="@+id/msCity"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/city"
+            android:textSize="@dimen/title_text_size"
+            app:ms_arrow_tint="@color/black_overlay"
+            app:ms_background_color="@color/colorAccent_dark"
+            app:ms_dropdown_height="wrap_content"
+            app:ms_dropdown_max_height="@dimen/max_dropdown_height" />
+
+        <com.jaredrummler.materialspinner.MaterialSpinner
+            android:id="@+id/msArea"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:text="@string/area"
+            android:textSize="@dimen/title_text_size"
+            app:ms_arrow_tint="@color/black_overlay"
+            app:ms_background_color="@color/colorAccent_dark"
+            app:ms_dropdown_height="wrap_content"
+            app:ms_dropdown_max_height="@dimen/max_dropdown_height" />
+
+
+        <com.jaredrummler.materialspinner.MaterialSpinner
+            android:id="@+id/msType"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/type"
+            android:textSize="@dimen/title_text_size"
+            app:ms_arrow_tint="@color/black_overlay"
+            app:ms_background_color="@color/colorAccent_dark"
+            app:ms_dropdown_height="wrap_content"
+            app:ms_dropdown_max_height="@dimen/max_dropdown_height" />
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

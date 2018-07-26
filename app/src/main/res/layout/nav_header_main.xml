@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container_nav_header"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?attr/selectableItemBackground">
+
+    <com.dmsegypt.dms.ux.custom_view.coordinatorView.StatusBarView
+        android:id="@+id/container_nav_header_statusBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/container_nav_header_statusBar"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+<!--
+        <com.dmsegypt.dms.ux.custom_view.CircleImageView
+            android:id="@+id/civHeaderAvatar"
+            android:layout_width="@dimen/large_icon_size"
+            android:layout_height="@dimen/large_icon_size"
+            android:scaleType="centerCrop"
+            android:src="@color/colorLine_light"
+            android:transitionName="@string/transition_user_avatar"
+            app:civ_fill_color="@color/colorLine_light"
+            tools:ignore="UnusedAttribute" />-->
+
+        <TextView
+            android:layout_margin="10dp"
+            android:id="@+id/TvNavUsername"
+            style="@style/title_text"
+            android:textSize="@dimen/title_text_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colormain"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/unknown_user" />
+
+        <TextView
+            android:textSize="@dimen/title_text_size"
+            style="@style/subtitle_text"
+            android:textColor="@color/colormain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/normal_margin"
+            android:text="@string/view_profile"
+            android:id="@+id/tv_user_type"
+            android:background="@drawable/bg_all_corner"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+</RelativeLayout>

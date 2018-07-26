@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="@dimen/margin_medium"
+    android:background="@drawable/background">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_person_black_60dp"
+        android:layout_marginBottom="@dimen/margin_medium"
+/>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_username"
+        android:layout_marginBottom="@dimen/margin_medium"
+        >
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/usernameEdit"
+        android:drawableStart="@drawable/ic_person_black_24dp"
+        />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_password"
+        android:layout_marginBottom="@dimen/margin_medium"
+        app:passwordToggleDrawable="@drawable/ic_visibility_blue_grey_500_24dp"
+        app:passwordToggleEnabled="true"
+
+        >
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/passwordEdit"
+        android:drawableStart="@drawable/ic_fiber_pin_black_24dp"
+        android:inputType="textPassword"
+
+        />
+    </android.support.design.widget.TextInputLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/action_login"
+        android:background="@drawable/roundedtop"
+        android:layout_gravity="center"
+        android:padding="@dimen/big_margin"
+        android:textColor="@color/colormain"
+        android:id="@+id/admin_login_btn"
+
+
+        />
+
+</LinearLayout>

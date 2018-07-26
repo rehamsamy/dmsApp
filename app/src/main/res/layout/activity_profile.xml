@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_user_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/root_color">
+
+
+
+
+    <com.dmsegypt.dms.ux.custom_view.SwipeBackCoordinatorLayout
+        android:id="@+id/activity_user_swipeBackView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/root_color"
+        tools:ignore="UnusedAttribute">
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/activity_profile_appBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?attr/colorPrimary"
+            app:theme="@style/ToolbarTheme">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/activity_profile_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="@android:color/transparent"
+                    app:navigationIcon="@drawable/ic_toolbar_back_light"
+                    app:popupTheme="@style/PopupMenuTheme" />
+
+                <com.dmsegypt.dms.ux.custom_view.CircleImageView
+                    android:id="@+id/activity_user_avatar"
+                    android:layout_width="@dimen/design_icon_size"
+                    android:layout_height="@dimen/design_icon_size"
+                    android:layout_gravity="center_horizontal"
+                    android:scaleType="centerCrop"
+                    android:src="?attr/line_color"
+                    android:transitionName="@string/transition_user_avatar"
+                    app:civ_fill_color="@color/colorTextGrey" />
+
+                <TextView
+                    android:id="@+id/activity_profile_title"
+                    style="@style/title_text"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/little_margin"
+                    android:layout_marginLeft="@dimen/normal_margin"
+                    android:layout_marginRight="@dimen/normal_margin"
+                    android:layout_marginTop="@dimen/normal_margin"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:text="@string/unknown_user"
+                    android:textColor="?attr/title_color"
+                    android:textSize="@dimen/large_title_text_size"
+                    android:textStyle="bold" />
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="@dimen/big_margin"
+                    android:gravity="center_horizontal">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom"
+                        android:paddingBottom="@dimen/mini_margin"
+                        android:paddingTop="@dimen/mini_margin">
+
+                        <TextView
+                            style="@style/title_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:layout_marginEnd="@dimen/little_margin"
+                            android:gravity="end"
+                            android:text="@string/national_id"
+                            android:textSize="@dimen/large_title_text_size" />
+
+                        <TextView
+                            style="@style/subtitle_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/national_id"
+                            android:textSize="@dimen/large_title_text_size" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom"
+                        android:paddingBottom="@dimen/mini_margin"
+                        android:paddingTop="@dimen/mini_margin">
+
+                        <TextView
+                            style="@style/title_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:layout_marginEnd="@dimen/little_margin"
+                            android:gravity="end"
+                            android:text="@string/card_id"
+                            android:textSize="@dimen/large_title_text_size" />
+
+                        <TextView
+                            style="@style/subtitle_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/card_id"
+                            android:textSize="@dimen/large_title_text_size" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom"
+                        android:paddingBottom="@dimen/mini_margin"
+                        android:paddingTop="@dimen/mini_margin">
+
+                        <TextView
+                            style="@style/title_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:layout_marginEnd="@dimen/little_margin"
+                            android:gravity="end"
+                            android:text="@string/mobile_number"
+                            android:textSize="@dimen/large_title_text_size" />
+
+                        <TextView
+                            style="@style/subtitle_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/large_title_text_size"
+                            tools:text="@string/mobile_number" />
+                    </TableRow>
+
+                </TableLayout>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </RadioGroup>
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </com.dmsegypt.dms.ux.custom_view.SwipeBackCoordinatorLayout>
+</android.support.design.widget.CoordinatorLayout>

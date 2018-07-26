@@ -1,0 +1,220 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context="com.dmsegypt.dms.ux.Fragment.ProfileFragment">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/big_margin"
+        android:gravity="center_horizontal">
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:layout_marginBottom="10dp"
+            android:paddingTop="@dimen/mini_margin">
+            <TextView
+                style="@style/title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginEnd="@dimen/little_margin"
+                android:gravity="start"
+                android:text="@string/username"
+                android:textColor="@color/colormain"
+                android:textSize="@dimen/title_text_size" />
+            <TextView
+                style="@style/subtitle_text"
+                android:layout_column="1"
+                android:id="@+id/tvProfileTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/unknown_user"
+                android:textSize="@dimen/title_text_size"
+                 />
+
+
+
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:paddingTop="@dimen/mini_margin"
+            android:layout_marginBottom="10dp"
+            >
+
+            <TextView
+                style="@style/title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginEnd="@dimen/little_margin"
+                android:gravity="start"
+                android:text="@string/national_id"
+                android:textColor="@color/colormain"
+
+                android:textSize="@dimen/title_text_size" />
+
+            <TextView
+                android:id="@+id/tvNationalID"
+                style="@style/subtitle_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/title_text_size"
+                tools:text="@string/national_id" />
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:paddingTop="@dimen/mini_margin"
+            android:layout_marginBottom="10dp"
+            >
+
+            <TextView
+                android:id="@+id/tvCardIdLabel"
+                style="@style/title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginEnd="@dimen/little_margin"
+                android:gravity="start"
+                android:textColor="@color/colormain"
+
+                android:text="@string/card_id"
+                android:textSize="@dimen/title_text_size" />
+
+            <TextView
+                android:id="@+id/tvCardId"
+                style="@style/subtitle_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/title_text_size"
+                tools:text="@string/card_id" />
+        </TableRow>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:paddingTop="@dimen/mini_margin"
+            android:layout_marginBottom="10dp"
+            >
+
+            <TextView
+                style="@style/title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginEnd="@dimen/little_margin"
+                android:gravity="start"
+                android:textColor="@color/colormain"
+
+                android:text="@string/mobile_number"
+                android:textSize="@dimen/title_text_size" />
+
+            <TextView
+                android:id="@+id/tvMobileNumber"
+                style="@style/subtitle_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/title_text_size"
+                tools:text="@string/mobile_number" />
+        </TableRow>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:paddingBottom="@dimen/mini_margin"
+            android:paddingTop="@dimen/mini_margin"
+            >
+
+            <TextView
+                style="@style/title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginEnd="@dimen/little_margin"
+                android:gravity="start"
+                android:textColor="@color/colormain"
+
+                android:text="@string/prompt_email"
+                android:textSize="@dimen/title_text_size" />
+
+            <TextView
+                android:id="@+id/tvEmail"
+                style="@style/subtitle_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/title_text_size"
+                tools:text="myLongEmailAddress@myDomain.com" />
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btnEditProfile"
+        style="?android:textAppearanceSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/roundedtop"
+        android:paddingBottom="@dimen/mini_margin"
+        android:paddingEnd="@dimen/little_margin"
+        android:paddingStart="@dimen/little_margin"
+        android:paddingTop="@dimen/mini_margin"
+        android:text="@string/action_edit_profile"
+        android:textAllCaps="false"
+        android:layout_marginBottom="@dimen/mini_margin"
+        android:textColor="@color/colormain"
+        android:textSize="@dimen/title_text_size"
+        android:textStyle="bold" />
+</LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
+

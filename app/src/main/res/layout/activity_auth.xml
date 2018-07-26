@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.dmsegypt.dms.ux.activity.AuthActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/transition_photo_background"
+
+
+        android:src="@drawable/bg_people"/>
+    <!-- Login progress -->
+    <ProgressBar
+        android:id="@+id/progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:visibility="visible">
+
+        <!-- login -->
+        <LinearLayout
+            android:background="@color/colorPrimaryTrams"
+            android:id="@+id/llSignin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:orientation="horizontal"
+            app:layout_widthPercent="85%">
+
+            <com.dmsegypt.dms.ux.custom_view.VerticalTextView
+                android:id="@+id/tvSigninInvoker"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingTop="15dp"
+                android:rotation="180"
+                android:text="@string/action_sign_in"
+                android:textAllCaps="true"
+                android:textSize="@dimen/title_text_size"
+                android:visibility="gone" />
+
+            <include
+                layout="@layout/layout_signin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/llSignup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:gravity="center_horizontal"
+            android:background="@color/colorAccentTrams"
+            android:orientation="horizontal"
+            app:layout_widthPercent="15%">
+
+            <com.dmsegypt.dms.ux.custom_view.VerticalTextView
+                android:id="@+id/tvSignupInvoker"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingTop="15dp"
+                android:textColor="@color/mdtp_white"
+                android:text="@string/action_sign_up"
+                android:textAllCaps="true"
+                android:textSize="@dimen/title_text_size"
+                android:visibility="visible" />
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <include
+                    layout="@layout/layout_signup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" />
+            </android.support.v4.widget.NestedScrollView>
+        </LinearLayout>
+    </android.support.percent.PercentRelativeLayout>
+
+    <include
+        layout="@layout/layout_forgot_password"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnSkip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/huge_margin"
+        android:text="@string/skip"
+        android:visibility="gone" />
+
+</RelativeLayout>

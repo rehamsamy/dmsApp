@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.dmsegypt.dms.ux.activity.EditCardActivity">
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/normal_margin">
+<TableRow
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="2"
+    >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textColor="@color/colormain"
+            style="@style/title_text"
+            android:text="@string/action_edit_card"
+            android:textSize="@dimen/design_title_text_size"
+            android:textStyle="bold"
+            android:gravity="center"
+            tools:ignore="HardcodedText" />
+</TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                >
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tinputCardId"
+                android:textColorHint="@color/colormain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                >
+                <EditText
+                    android:id="@+id/etCardId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/card_id"
+                    android:inputType="text"
+                    android:enabled="false"
+                    android:textSize="@dimen/title_text_size"
+                    android:maxLines="1" />
+
+            </android.support.design.widget.TextInputLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="100"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colormain"
+                    style="@style/title_text"
+                    android:text="@string/card_degree"
+                    android:textSize="@dimen/title_text_size"
+                    android:layout_weight="40"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/mini_padding"
+                    tools:ignore="HardcodedText" />
+
+                    <com.jaredrummler.materialspinner.MaterialSpinner
+                        android:id="@+id/degreespinner"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="60"
+                        android:text="@string/Degree"
+                        android:textSize="@dimen/title_text_size"
+                        app:ms_arrow_tint="@color/colormain"
+                        android:textColor="@color/colormain"
+                        app:ms_dropdown_height="wrap_content"
+                        app:ms_background_color="@color/mdtp_white"
+                        app:ms_dropdown_max_height="@dimen/max_dropdown_height" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_marginTop="@dimen/big_margin"
+                >
+            <EditText
+                android:id="@+id/etReason"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:layout_weight="2"
+                android:textSize="@dimen/title_text_size"
+                android:padding="@dimen/mini_padding"
+                android:background="@drawable/rect_view"
+                android:textColor="@color/colormain"
+                android:textColorHint="@color/colormain"
+                android:hint="@string/reason_type"
+                android:inputType="textMultiLine"
+                android:imeOptions="actionNext"
+                android:minLines="5"
+                android:maxLines="5"
+                />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_marginTop="@dimen/mini_margin"
+                >
+            <Button
+                android:layout_weight="2"
+                android:id="@+id/btnSubmit"
+               style="@style/material_button"
+                android:text="@string/submit"
+                android:layout_gravity="center"
+                 />
+            </TableRow>
+
+    </TableLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+    <ImageButton
+        android:id="@+id/iBtnCloseBtn"
+        style="@style/material_image_button"
+        android:src="@mipmap/ic_close_light"
+        tools:ignore="ContentDescription" />
+</FrameLayout>

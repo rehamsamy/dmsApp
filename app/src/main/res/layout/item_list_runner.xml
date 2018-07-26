@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/grey_bg"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linear_runner_details"
+        >
+
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:paddingTop="8dp"
+            tools:ignore="RtlHardcoded">
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:id="@+id/edit_runner"
+                android:text="@string/order_date"
+                android:src="@drawable/ic_menu_light"
+                />
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/iv_runner_image"
+                android:text="@string/order_date"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/userprofile"
+                />
+
+            <LinearLayout
+                android:layout_marginLeft="@dimen/mini_margin"
+                android:layout_toRightOf="@+id/iv_runner_image"
+                android:orientation="vertical"
+                android:layout_below="@+id/spacer"
+                android:id="@+id/linear_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_runner_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:text="@string/amr"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textStyle="normal"
+                    android:textSize="@dimen/title_text_size"
+                    />
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_runner_rate"
+                        android:layout_toRightOf="@+id/view_runner_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:text="@string/number"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textStyle="normal"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_runner_own"
+                        android:layout_toRightOf="@+id/view_approval_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:text="@string/car"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textStyle="normal"
+                        />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

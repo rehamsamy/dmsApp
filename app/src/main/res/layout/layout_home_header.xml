@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llHomeHeader"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:baselineAligned="false"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:ignore="ContentDescription">
+
+    <EditText
+        android:layout_marginTop="@dimen/normal_margin"
+        android:textColorHint="@color/colormain"
+        android:textColor="@color/colormain"
+        android:id="@+id/etSearchText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/normal_margin"
+        android:layout_marginStart="@dimen/normal_margin"
+        android:background="@drawable/rect_view"
+        android:gravity="center"
+        android:hint="@string/search_by_name"
+        android:padding="@dimen/little_margin"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tab_layout_height"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <com.jaredrummler.materialspinner.MaterialSpinner
+
+            android:id="@+id/msCity"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/city"
+            app:ms_arrow_tint="@color/black_overlay"
+            app:ms_background_color="@color/colorAccent_dark"
+            app:ms_dropdown_height="wrap_content"
+            app:ms_dropdown_max_height="@dimen/max_dropdown_height" />
+
+        <com.jaredrummler.materialspinner.MaterialSpinner
+            android:id="@+id/msArea"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:text="@string/area"
+            app:ms_arrow_tint="@color/black_overlay"
+            app:ms_background_color="@color/colorAccent_dark"
+            app:ms_dropdown_height="wrap_content"
+            app:ms_dropdown_max_height="@dimen/max_dropdown_height" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tab_layout_height"
+        android:orientation="horizontal"
+        android:baselineAligned="false"
+        >
+        <com.jaredrummler.materialspinner.MaterialSpinner
+            android:id="@+id/msType"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/type"
+            app:ms_arrow_tint="@color/black_overlay"
+            app:ms_background_color="@color/colorAccent_dark"
+            app:ms_dropdown_height="wrap_content"
+            app:ms_dropdown_max_height="@dimen/max_dropdown_height" />
+
+        <com.jaredrummler.materialspinner.MaterialSpinner
+            android:id="@+id/msSpicific"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:text="@string/Spicific"
+            app:ms_arrow_tint="@color/black_overlay"
+            app:ms_background_color="@color/colorAccent_dark"
+            app:ms_dropdown_height="wrap_content"
+            app:ms_dropdown_max_height="@dimen/max_dropdown_height"
+            android:visibility="gone"
+            />
+
+        <ImageButton
+            android:id="@+id/iBtnSearch"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@drawable/ic_search"
+            android:background="@color/colorAccentyellow"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

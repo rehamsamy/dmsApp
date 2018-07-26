@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single"
+        >
+
+        <item
+            android:id="@+id/action_about"
+            android:checkable="false"
+            android:icon="@mipmap/ic_info"
+            android:orderInCategory="100"
+            android:title="@string/action_about" />
+
+
+        <item
+            android:id="@+id/sub_action_network_search"
+            android:checkable="true"
+            android:icon="@drawable/ic_search"
+            android:orderInCategory="100"
+            android:title="@string/action_search"
+            app:actionLayout="@layout/menu_layout"
+
+            />
+
+
+
+
+        <item
+            android:id="@+id/action_requests"
+            android:checkable="false"
+            android:icon="@drawable/ic_request"
+            android:orderInCategory="100"
+            android:title="@string/action_requests"
+            android:visible="true"
+            />
+
+
+
+
+
+        <item
+            android:id="@+id/action_contract"
+            android:title="@string/title_summray_contract"
+            android:checkable="false"
+            android:icon="@drawable/ic_contract"
+            android:orderInCategory="100" />
+
+        <item
+            android:id="@+id/action_indmnity"
+            android:icon="@drawable/ic_indimnty"
+            android:orderInCategory="100"
+            android:title="@string/action_indmnity"
+            android:visible="true"
+            tools:visible="true" />
+        <item
+            android:id="@+id/action_admin"
+            android:title="@string/admin_title"
+            android:checkable="false"
+            android:icon="@drawable/ic_admin"
+            android:orderInCategory="100" />
+        <item
+            android:id="@+id/action_massenger"
+            android:icon="@drawable/ic_motorcycle"
+            android:orderInCategory="100"
+            android:title="@string/action_Massenger" />
+
+        <item
+            android:id="@+id/action_notifications"
+            android:checkable="false"
+            android:icon="@drawable/ic_notifications_none"
+            android:orderInCategory="100"
+            android:title="@string/action_notifications"
+            app:actionViewClass="android.widget.TextView">
+
+        </item>
+
+
+        <item
+            android:id="@+id/action_complaints"
+            android:checkable="false"
+            android:icon="@drawable/ic_report_problem"
+            android:orderInCategory="100"
+            android:title="@string/action_complaints" />
+
+        <item
+            android:id="@+id/action_tele_sales"
+            android:title="@string/title_tele_sales"
+            android:checkable="false"
+            android:icon="@drawable/ic_tele_sales"
+            android:orderInCategory="100" />
+
+        <item
+            android:id="@+id/action_chat"
+            android:title="@string/chat_title"
+            android:checkable="false"
+            android:icon="@drawable/ic_chat_black_24dp"
+            android:orderInCategory="100" />
+
+        <item
+            android:id="@+id/action_batch"
+            android:icon="@drawable/ic_batch"
+            android:orderInCategory="100"
+            android:title="@string/action_batch"
+            android:visible="true"
+            tools:visible="true" />
+        <item
+            android:id="@+id/action_after_sales"
+            android:icon="@drawable/ic_after_sales"
+            android:orderInCategory="100"
+            android:title="@string/after_sales"
+            android:visible="true"
+            tools:visible="true" />
+
+
+    </group>
+
+
+</menu>

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_small"
+    app:cardCornerRadius="10dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/edit"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/little_padding"
+            android:id="@+id/tv_edituser"
+            />
+
+        <com.dmsegypt.dms.ux.custom_view.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:maxHeight="96dp"
+            android:maxWidth="96dp"
+            android:minHeight="96dp"
+            android:minWidth="96dp"
+            android:src="@drawable/default_avata"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_image"
+            android:text="@string/first_name"
+            android:gravity="center"
+            android:padding="@dimen/small_padding"
+            android:textSize="25dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/stateContainer"
+            android:gravity="center"
+            android:layout_below="@+id/name">
+
+            <TextView
+                android:id="@+id/activeState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/active"
+                android:visibility="visible"
+                android:padding="@dimen/small_padding"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:textColor="@color/color_white"
+                android:background="#038724"/>
+            <TextView
+                android:id="@+id/inActivestate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Inactive"
+                android:padding="10dp"
+                android:textSize="20dp"
+                android:visibility="gone"
+                android:gravity="center"
+                android:textColor="@color/color_white"
+                android:background="#cc0a17"
+                />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/switchBtn"
+                android:paddingLeft="10dp"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:padding="@dimen/small_padding"
+            android:layout_below="@id/stateContainer"
+            android:id="@+id/cardIdContainer">
+
+            <ImageView
+                android:id="@+id/cardIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/card_id"
+                android:paddingLeft="@dimen/margin_small"
+                />
+
+            <TextView
+                android:id="@+id/cardId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/card_id"
+                android:textSize="18dp"
+                android:paddingLeft="@dimen/small_padding"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:padding="@dimen/small_padding"
+
+            android:layout_below="@id/cardIdContainer"
+            android:id="@+id/emailContainer">
+
+            <ImageView
+                android:id="@+id/emailIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/email"
+                android:paddingLeft="@dimen/margin_small"
+                />
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/info_email"
+                android:textSize="18dp"
+                android:paddingLeft="@dimen/small_padding"
+
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:layout_below="@id/emailContainer"
+            android:id="@+id/phoneContainer"
+            android:padding="@dimen/small_padding"
+            >
+
+            <ImageView
+                android:id="@+id/phoneIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/phone"
+                android:paddingLeft="@dimen/margin_small"
+                />
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/contact_phone"
+                android:textSize="18dp"
+                android:paddingLeft="@dimen/small_padding"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/phoneContainer"
+            android:id="@+id/passwordContainer"
+            android:padding="@dimen/small_padding"
+            >
+
+            <ImageView
+                android:id="@+id/passwordIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/password"
+                android:paddingLeft="@dimen/margin_small"
+                android:layout_gravity="center"
+                />
+            <TextView
+                android:id="@+id/password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/astrics"
+                android:layout_gravity="center"
+                android:textSize="18dp"
+                android:paddingLeft="@dimen/small_padding"
+
+                />
+
+            <ImageButton
+                android:id="@+id/showPasswordBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/margin_medium"
+                android:background="@drawable/eye"
+                android:paddingLeft="@dimen/margin_small"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:layout_below="@id/passwordContainer"
+            android:id="@+id/typeContainer"
+            android:padding="@dimen/small_padding"
+
+            >
+
+            <ImageView
+                android:id="@+id/typeIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/user_type"
+                android:paddingLeft="@dimen/margin_small"
+                />
+            <TextView
+                android:id="@+id/type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/provider"
+                android:textSize="18dp"
+                android:paddingLeft="@dimen/small_padding"
+
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

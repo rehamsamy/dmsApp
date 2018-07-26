@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <!--Main View-->
+
+    <include
+        layout="@layout/app_bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!--Navigation View-->
+    <android.support.design.widget.NavigationView
+        android:nestedScrollingEnabled="true"
+        android:layout_width="wrap_content"
+        android:id="@+id/navigationmenu"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        >
+        <LinearLayout
+            android:layout_marginBottom="50dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.NavigationView
+                app:headerLayout="@layout/nav_header_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/nav_view"
+                app:itemIconTint="@color/colormain"
+                app:itemTextColor="@color/colormain"
+                app:menu="@menu/activity_main_drawer">
+
+            </android.support.design.widget.NavigationView>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/tvSignOutContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/colormain"
+            android:padding="@dimen/mini_margin">
+
+
+            <TextView
+                android:id="@+id/tvSignOut"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:paddingBottom="@dimen/mini_margin"
+                android:paddingTop="@dimen/mini_margin"
+                android:text="@string/action_sign_out"
+
+                android:textSize="@dimen/title_text_size"
+                android:textColor="@color/cardview_light_background" />
+        </LinearLayout>
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>
+
+    <include
+        layout="@layout/layout_change_password"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+</FrameLayout>

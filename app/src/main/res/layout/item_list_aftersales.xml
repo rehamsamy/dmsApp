@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="@dimen/mini_margin"
+    android:padding="@dimen/mini_padding"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    xmlns:tools="http://schemas.android.com/tools">
+    <RelativeLayout
+        android:id="@+id/view_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        
+
+    <LinearLayout
+        android:id="@+id/view_forground"
+        android:background="@color/color_white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+            <TextView
+                android:id="@+id/tv_visit_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:textColor="@color/colormain"
+                android:textAlignment="viewStart"
+                android:textSize="@dimen/title_text_size"
+                tools:text="" />
+            <TextView
+                android:id="@+id/tv_comp_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif"
+                android:maxLines="2"
+                android:paddingBottom="5dp"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:textAlignment="viewStart"
+                android:textSize="@dimen/title_text_size"
+                android:textColor="@color/colormain"
+                android:textStyle="normal|bold"
+                tools:text="Comp Name "
+                android:drawableLeft="@drawable/ic_business_black_24dp"/>
+            <TextView
+                android:id="@+id/tv_visit_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_comp_name"
+                android:paddingBottom="5dp"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:textColor="@color/colormain"
+                android:textSize="14sp"
+                tools:text="12/6/20163"
+                android:drawableLeft="@drawable/ic_date_36dp"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+        <TextView
+            android:id="@+id/deleted_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Deleted"
+            android:textColor="@color/white_color"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10dp"
+           android:visibility="gone"
+            android:background="@color/colorAccentRed"
+            tools:visibility="gone"
+            android:padding="@dimen/small_padding"
+
+            />
+        <ImageButton
+
+            android:id="@+id/delete_after_sales_item"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_delete_white_36dp"
+            android:background="@color/colormain"
+            android:layout_alignParentRight="true"
+            tools:visibility="gone"
+           />
+        <com.dmsegypt.dms.ux.custom_view.DotLoadingView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/progress"/>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

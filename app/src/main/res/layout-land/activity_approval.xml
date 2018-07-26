@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_approval_container"
+    tools:context="com.dmsegypt.dms.ux.activity.ApprovalActivity">
+    <com.dmsegypt.dms.ux.custom_view.SwipeBackCoordinatorLayout
+        android:id="@+id/activity_settings_swipeBackView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/root_color">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <include layout="@layout/header_toolbar"/>
+                <include layout="@layout/content_approval"/>
+            </LinearLayout>
+
+
+        </android.support.v4.widget.NestedScrollView>
+    </com.dmsegypt.dms.ux.custom_view.SwipeBackCoordinatorLayout>
+</android.support.design.widget.CoordinatorLayout>

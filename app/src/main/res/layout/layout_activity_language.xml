@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.dmsegypt.dms.ux.activity.SplashActivity"
+    tools:ignore="ContentDescription"
+    android:orientation="vertical">
+
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/huge_margin"
+        android:adjustViewBounds="true"
+        android:src="@drawable/logo" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/choose_language"
+        android:textColor="@color/accent"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        />
+
+    <Button
+        android:id="@+id/english_button"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/cling_button_bg"
+        android:textColor="@color/white_color"
+        android:text="@string/english"
+        />
+    <Button
+        android:id="@+id/arabic_button"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/cling_button_bg"
+        android:text="@string/arabic"
+        android:textColor="@color/white_color"
+
+
+        />
+
+
+
+</LinearLayout>

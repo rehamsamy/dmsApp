@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="400dp"
+ >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colormain"
+        android:layout_marginBottom="16dp"
+        android:text="@string/label_filter"
+        android:gravity="center"
+        android:textColor="@android:color/white"/>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/Card_id_et"
+        android:hint="@string/label_card_id"
+        android:textSize="@dimen/small_text_size"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rect_view"
+        android:padding="8dp"
+
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/Claim_no_et"
+        android:hint="@string/label_claim_no"
+        android:layout_marginBottom="16dp"
+        android:textSize="@dimen/small_text_size"
+        android:background="@drawable/rect_view"
+        android:padding="8dp"
+        />
+    <EditText
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/no_medicine_et"
+        android:textSize="@dimen/small_text_size"
+        android:hint="@string/hint_med_code_name"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rect_view"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_button"
+        android:text="@string/label_filter"
+        android:textSize="@dimen/small_text_size"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        android:textColor="@color/colormain"
+        android:id="@+id/filter_btn"
+        />
+    <Button
+        android:id="@+id/cancel_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/small_text_size"
+        android:background="@drawable/bg_button"
+        android:text="@string/cancel"
+        android:textColor="@color/colormain"
+        />
+    </LinearLayout>
+
+</LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:paddingBottom="@dimen/normal_margin"
+    android:paddingTop="@dimen/normal_margin"
+
+    tools:context="com.dmsegypt.dms.ux.Fragment.AboutFragment">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:textSize="@dimen/title_text_size"
+                android:textColor="@color/colormain"
+                style="@style/large_title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/normal_margin"
+                android:text="@string/d_m_s_growth"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colormain"
+                android:padding="@dimen/mini_margin"
+                android:textSize="@dimen/title_text_size"
+                android:text="@string/history"
+                android:textColor="@color/cardview_light_background" />
+
+            <TextView
+                android:textSize="@dimen/title_text_size"
+                android:textColor="@color/colormain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/normal_margin"
+                android:text="@string/content_about_details" />
+
+            <TextView
+                android:textColor="@color/colormain"
+                android:id="@+id/tvWebsite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/big_margin"
+                android:background="?attr/selectableItemBackground"
+                android:padding="@dimen/little_margin"
+                android:textSize="@dimen/title_text_size"
+                android:text="@string/dms_website"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</FrameLayout>

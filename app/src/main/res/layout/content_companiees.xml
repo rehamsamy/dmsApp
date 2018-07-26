@@ -1,0 +1,39 @@
+<android.support.v4.widget.NestedScrollView android:id="@+id/activity_appBar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimary"
+    app:theme="@style/ToolbarTheme"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.dmsegypt.dms.ux.activity.ComplainsActivity">
+
+        <LinearLayout
+            android:id="@+id/llNoResult"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical"
+            tools:ignore="UselessParent" />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layoutAnimation="@anim/layout_anim"
+            android:scrollbars="vertical" />
+
+
+    </FrameLayout>
+</android.support.v4.widget.NestedScrollView>

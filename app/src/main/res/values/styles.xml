@@ -1,0 +1,286 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary_light</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark_light</item>
+        <item name="colorAccent">@color/colorAccent_light</item>
+        <item name="root_color">@color/colorRoot_light</item>
+        <item name="line_color">@color/colorLine_light</item>
+        <item name="title_color">@color/colorTextTitle_light</item>
+        <item name="subtitle_color">@color/colorTextSubtitle_light</item>
+        <item name="content_color">@color/colorTextContent_light</item>
+        <item name="android:windowBackground">@color/colorPrimary_light</item>
+        <item name="android:popupMenuStyle">@style/material_popup_menu</item>
+
+        <item name="android:textColorSecondary">@color/mdtp_white</item>
+
+
+
+        //---
+
+
+
+        <item name="android:textColorPrimary">?attr/content_color</item>
+        <item name="android:windowTranslucentStatus" tools:ignore="NewApi">false</item>
+        <item name="android:statusBarColor" tools:ignore="NewApi">@color/colorPrimaryDark_light
+        </item>
+        <item name="android:windowLightStatusBar" tools:ignore="NewApi">true</item>
+        <item name="android:windowAllowEnterTransitionOverlap" tools:ignore="NewApi">true</item>
+        <item name="android:windowAllowReturnTransitionOverlap" tools:ignore="NewApi">true</item>
+
+        /---
+
+        <item name="android:windowContentTransitions" tools:ignore="NewApi">true</item>
+        <!-- specify enter and exit transitions -->
+        <!--<Item name="android:windowEnterTransition" tools:ignore="NewApi">@transition/explode</Item>-->
+        <!--<Item name="android:windowExitTransition" tools:ignore="NewApi">@transition/explode</Item>-->
+
+        <!-- specify shared element transitions -->
+        <!--<Item name="android:windowSharedElementEnterTransition" tools:ignore="NewApi">-->
+            <!--@transition/changebounds_with_arcmotion-->
+        <!--</Item>-->
+        <!--<Item name="android:windowSharedElementExitTransition" tools:ignore="NewApi">-->
+            <!--@transition/changebounds_with_arcmotion-->
+        <!--</Item>-->
+    </style>
+
+    <style name="FullscreenTheme" parent="AppTheme">
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+    </style>
+
+    <style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/colorPrimary</item>
+        <item name="colorControlActivated">@color/colormain</item>
+    </style>
+
+    <!-- button -->
+    <style name="material_button" parent="@style/Widget.AppCompat.Button.Borderless">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colormain</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:background">@drawable/roundedtop</item>
+        <item name="android:textSize">@dimen/title_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">@dimen/little_padding</item>
+        <item name="android:layout_margin">@dimen/little_margin</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.NoTranslucent2" />
+
+    <style name="material_button_nodimin" parent="@style/Widget.AppCompat.Button.Borderless">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:textColor">@color/colormain</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:background">@drawable/roundedtop</item>
+        <item name="android:textSize">@dimen/title_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">@dimen/little_padding</item>
+        <item name="android:layout_margin">@dimen/little_margin</item>
+    </style>
+
+    <style name="material_toolbar_image_button">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:padding">@dimen/mini_padding</item>
+        <item name="android:layout_margin">@dimen/mini_margin</item>
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+    </style>
+
+    <style name="material_image_button">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:padding">@dimen/little_padding</item>
+        <item name="android:layout_margin">@dimen/little_margin</item>
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+    </style>
+
+    <!-- Text -->
+
+    <style name="large_title_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/large_title_text_size</item>
+        <item name="android:textColor">@color/colorTextTitle_light</item>
+    </style>
+
+    <style name="title_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/title_text_size</item>
+        <item name="android:textColor">@color/colorTextTitle_light</item>
+    </style>
+
+    <style name="subtitle_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/subtitle_text_size</item>
+        <item name="android:textColor">@color/colorTextSubtitle_light</item>
+    </style>
+
+    <style name="summary_text">
+
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/subtitle_text_size</item>
+        <item name="android:paddingStart">@dimen/mini_padding</item>
+        <item name="android:paddingTop">@dimen/mini_padding</item>
+
+
+    </style>
+
+    <style name="summary_text_header">
+
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/subtitle_text_size</item>
+        <item name="android:textColor">@color/mdtp_white</item>
+        <item name="android:paddingStart">@dimen/mini_padding</item>
+        <item name="android:paddingTop">@dimen/mini_padding</item>
+        <item name="android:drawableRight">@drawable/ic_filter_list_</item>
+
+
+    </style>
+    <style name="content_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/content_text_size</item>
+        <item name="android:textColor">@color/colorTextContent_light</item>
+    </style>
+
+    <!-- image -->
+
+    <style name="material_icon">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/normal_margin</item>
+    </style>
+
+    <!-- popup. -->
+
+    <style name="material_popup_menu" parent="@android:style/Widget.Holo.PopupMenu">
+        <item name="android:popupBackground">@color/colorRoot_light</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <!-- toolbar. -->
+
+    <style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <item name="android:textColorPrimary">?attr/content_color</item>
+        <item name="android:textColorSecondary">?attr/content_color</item>
+    </style>
+
+    <!-- menu. -->
+
+    <style name="PopupMenuTheme" parent="@style/ThemeOverlay.AppCompat">
+        <item name="android:colorBackground">?attr/root_color</item>
+        <item name="android:textColor">?attr/content_color</item>
+    </style>
+
+    <style name="AppTheme.Translucent" parent="AppTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="AppTheme.Translucent.Provider" parent="AppTheme.Translucent" tools:targetApi="lollipop">
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+        <item name="android:windowAllowReturnTransitionOverlap">true</item>
+        <item name="android:windowSharedElementEnterTransition">@android:transition/move</item>
+        <item name="android:windowSharedElementExitTransition">@android:transition/move</item>
+    </style>
+
+    <style name="AppCompatAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">#FFCC00</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:background">#5fa3d0</item>
+    </style>
+
+    <style name="splash_progress" parent="AppTheme">
+        <item name="colorAccent">#46BEF3</item>
+    </style>
+    <style name="AppTheme.WhiteAccent">
+        <item name="colorAccent">#fff</item> <!-- Whatever color you want-->
+    </style>
+
+
+    <style name="FABStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">16dp</item>
+        <item name="android:src">@drawable/ic_camera</item>
+        <item name="borderWidth">0dp</item>
+        <item name="elevation">6dp</item>
+        <item name="pressedTranslationZ">12dp</item>
+        <item name="rippleColor">@android:color/white</item>
+    </style>
+<style name="approval_edittext">
+    <item name="android:layout_width">110dp</item>
+    <item name="android:height">70dp</item>
+    <item name="android:layout_weight">10</item>
+    <item name="android:padding">8dp</item>
+    <item name="android:textSize">24sp</item>
+</style>
+
+    <style name="counterText">
+        <item name="android:textColor">#08e63b</item>
+    </style>
+
+    <style name="counterOverride">
+        <item name="android:textColor">#ff0000</item>
+    </style>
+    <style name="ImagePickerTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <!-- Customize your theme here. -->
+    <item name="colorPrimary">@color/colormain</item>
+    <item name="colorPrimaryDark">@color/colormain</item>
+    <item name="colorAccent">@color/colorAccent</item>
+
+
+    <item name="windowActionBar">false</item>
+    <item name="windowNoTitle">true</item>
+    </style>
+
+    <!-- rating dialog styles -->
+
+    <style name="TextAppearance" parent="TextAppearance.AppCompat" />
+
+    <style name="TextAppearance.AppRatingDialog"/>
+
+    <style name="TextAppearance.AppRatingDialog.Title">
+        <item name="android:fontFamily">sans-serif-medium</item> 
+        <item name="android:textSize">@dimen/text_size_large</item> 
+    </style>
+
+    <style name="TextAppearance.AppRatingDialog.Description">
+        <item name="android:fontFamily">sans-serif</item> 
+        <item name="android:textSize">@dimen/text_size_medium</item> 
+    </style>
+
+
+    <style name="TextAppearance.AppRatingDialog.NoteLabel">
+        <item name="android:fontFamily">sans-serif</item> 
+        <item name="android:textSize">@dimen/text_size_small</item> 
+    </style>
+
+
+</resources>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "946157883762",
+    "firebase_url": "https://dms-chat-f6426.firebaseio.com",
+    "project_id": "dms-chat-f6426",
+    "storage_bucket": "dms-chat-f6426.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:946157883762:android:e3b4b47f43c6dd3b",
+        "android_client_info": {
+          "package_name": "com.dmsegypt.dms"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "946157883762-g8br21df6e0g2iedb0j07vjqnnmi1ath.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkmSjMGQ9ntURE9F37yJMWNNPx-nQtmws"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

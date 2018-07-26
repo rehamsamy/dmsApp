@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:id="@+id/rel_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:id="@+id/linear_back"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/back_btn"
+                android:layout_gravity="start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_toolbar_back_light"
+                />
+        <TextView
+            android:layout_gravity="center"
+            android:textColor="@color/colormain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/back"
+            android:textSize="@dimen/title_text_size"
+            android:textStyle="bold"
+            />
+
+        </LinearLayout>
+        <TextView
+            android:layout_gravity="center"
+            android:textColor="@color/colormain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_new_order"
+            android:textSize="@dimen/title_text_size"
+            android:textStyle="bold"
+            />
+       <TableLayout
+           android:id="@+id/table_searchforcompany"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           >
+
+           <TableRow
+               android:layout_marginTop="@dimen/big_margin"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               >
+
+               <EditText
+                   android:layout_weight="1"
+                   android:background="@drawable/rect_view"
+                   android:layout_marginTop="@dimen/normal_margin"
+                   android:textColorHint="@color/colormain"
+                   android:textColor="@color/colormain"
+                   android:id="@+id/etSearchText"
+                   android:drawableRight="@drawable/ic_search"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginEnd="@dimen/normal_margin"
+                   android:layout_marginStart="@dimen/normal_margin"
+                   android:hint="@string/searchforcompany"
+                   android:padding="@dimen/little_margin"
+                   />
+           </TableRow>
+           <TableRow
+               android:layout_marginTop="@dimen/big_margin"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               >
+               <android.support.v7.widget.RecyclerView
+                   android:layout_margin="@dimen/mini_margin"
+                   android:id="@+id/recyclerview"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+
+                   />
+
+
+
+           </TableRow>
+
+       </TableLayout>
+       <TableLayout
+           android:visibility="gone"
+           android:id="@+id/table_new_order"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           >
+           <LinearLayout
+               android:gravity="right"
+               android:orientation="horizontal"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content">
+               <TextView
+                   android:id="@+id/textView1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/VIP" />
+               <CheckBox
+                   android:id="@+id/checkBoxvip"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                    />
+
+           </LinearLayout>
+
+           <TableRow
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:weightSum="2"
+               >
+               <android.support.design.widget.TextInputLayout
+                   android:id="@+id/tinputOrderdate"
+                   android:layout_width="match_parent"
+                   android:textColorHint="@color/colormain"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="2"
+                   >
+
+                   <EditText
+                       android:textColor="@color/colormain"
+                       android:id="@+id/etOrderDate"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:hint="@string/order_date"
+                       android:inputType="textPersonName"
+                       android:maxLines="1"
+                       android:nextFocusDown="@+id/etFullNamearab"
+                       android:textSize="@dimen/title_text_size"/>
+               </android.support.design.widget.TextInputLayout>
+
+           </TableRow>
+           <TableRow
+               android:id="@+id/spinnermassengertype"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+
+               >
+
+               <com.jaredrummler.materialspinner.MaterialSpinner
+                   android:id="@+id/typespinner"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_marginBottom="16dp"
+                   android:layout_weight="1"
+                   android:text="@string/type"
+                   app:ms_arrow_tint="@color/colormain"
+                   android:textColor="@color/colormain"
+                   app:ms_background_color="@color/colorAccent_dark"
+                   app:ms_dropdown_height="wrap_content"
+                   app:ms_dropdown_max_height="@dimen/max_dropdown_height"
+                   android:hint="@string/select_city"/>
+           </TableRow>
+
+           <TableRow
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:weightSum="2"
+               >
+               <android.support.design.widget.TextInputLayout
+                   android:id="@+id/tinputCompanyId"
+                   android:layout_width="match_parent"
+                   android:textColorHint="@color/colormain"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="2"
+                   >
+
+                   <EditText
+                       android:textColor="@color/colormain"
+                       android:id="@+id/etCompanyId"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:hint="@string/companyid"
+                       android:inputType="textPersonName"
+                       android:maxLines="1"
+                       android:nextFocusDown="@+id/etPassword"
+                       android:textSize="@dimen/title_text_size"/>
+               </android.support.design.widget.TextInputLayout>
+
+           </TableRow>
+
+           <TableRow
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:weightSum="2"
+               >
+               <android.support.design.widget.TextInputLayout
+                   android:id="@+id/tinputCompanyName"
+                   android:layout_width="match_parent"
+                   android:textColorHint="@color/colormain"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="2"
+                   >
+
+                   <EditText
+                       android:textColor="@color/colormain"
+                       android:id="@+id/etCompanyName"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:hint="@string/companyname"
+                       android:inputType="textPersonName"
+                       android:maxLines="1"
+                       android:nextFocusDown="@+id/etPassword"
+                       android:textSize="@dimen/title_text_size"/>
+               </android.support.design.widget.TextInputLayout>
+
+           </TableRow>
+
+           <TableRow
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:padding="@dimen/mini_mini_padding"
+               android:weightSum="2"
+               >
+               <android.support.design.widget.TextInputLayout
+                   android:id="@+id/tinputCompanyPhone1"
+                   android:layout_width="match_parent"
+                   android:textColorHint="@color/colormain"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="2"
+                   >
+
+                   <EditText
+                       android:textColor="@color/colormain"
+                       android:id="@+id/etCompanyPhone1"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:hint="@string/companyphone1"
+                       android:inputType="textPersonName"
+                       android:maxLines="1"
+                       android:nextFocusDown="@+id/etPassword"
+                       android:textSize="@dimen/title_text_size"/>
+               </android.support.design.widget.TextInputLayout>
+
+           </TableRow>
+
+           <TableRow
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:padding="@dimen/mini_mini_padding"
+               android:weightSum="2"
+               >
+               <android.support.design.widget.TextInputLayout
+                   android:id="@+id/tinputCompanyPhone2"
+                   android:layout_width="match_parent"
+                   android:textColorHint="@color/colormain"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="2"
+                   >
+
+                   <EditText
+                       android:drawableLeft="@drawable/ic_star"
+                       android:textColor="@color/colormain"
+                       android:id="@+id/etCompanyPhone2"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:hint="@string/companyphone2"
+                       android:inputType="textPersonName"
+                       android:maxLines="1"
+                       android:nextFocusDown="@+id/etPassword"
+                       android:textSize="@dimen/title_text_size"/>
+               </android.support.design.widget.TextInputLayout>
+
+           </TableRow>
+
+           <TableRow
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:padding="@dimen/mini_mini_padding"
+               android:weightSum="2"
+               >
+               <android.support.design.widget.TextInputLayout
+                   android:id="@+id/tinputCompanyAddress1"
+                   android:layout_width="match_parent"
+                   android:textColorHint="@color/colormain"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="2"
+                   >
+
+                   <EditText
+                       android:textColor="@color/colormain"
+                       android:id="@+id/etCompanyAddress1"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:hint="@string/companyaddress1"
+                       android:inputType="textPersonName"
+                       android:maxLines="1"
+                       android:nextFocusDown="@+id/etPassword"
+                       android:textSize="@dimen/title_text_size"/>
+               </android.support.design.widget.TextInputLayout>
+
+           </TableRow>
+
+           <TableRow
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:padding="@dimen/mini_mini_padding"
+               android:weightSum="2"
+               >
+               <android.support.design.widget.TextInputLayout
+                   android:id="@+id/tinputCompanyAddress2"
+                   android:layout_width="match_parent"
+                   android:textColorHint="@color/colormain"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="2"
+                   >
+
+                   <EditText
+                       android:drawableLeft="@drawable/ic_star"
+                       android:textColor="@color/colormain"
+                       android:id="@+id/etCompanyAddress2"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:hint="@string/companyaddress2"
+                       android:inputType="textPersonName"
+                       android:maxLines="1"
+                       android:nextFocusDown="@+id/etPassword"
+                       android:textSize="@dimen/title_text_size"/>
+               </android.support.design.widget.TextInputLayout>
+
+           </TableRow>
+
+
+
+           <TableRow
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:weightSum="2"
+               >
+               <android.support.design.widget.TextInputLayout
+                   android:id="@+id/tinputContactname"
+                   android:layout_width="match_parent"
+                   android:textColorHint="@color/colormain"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="2"
+                   >
+
+                   <EditText
+                       android:textColor="@color/colormain"
+                       android:id="@+id/etContactname"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:hint="@string/contact_name"
+                       android:inputType="textPersonName"
+                       android:maxLines="1"
+                       android:nextFocusDown="@+id/etPassword"
+                       android:textSize="@dimen/title_text_size"/>
+               </android.support.design.widget.TextInputLayout>
+
+           </TableRow>
+
+
+
+           <TableRow
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               >
+               <com.jaredrummler.materialspinner.MaterialSpinner
+                   android:id="@+id/aoCity"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_marginBottom="16dp"
+                   android:layout_weight="1"
+                   android:text="@string/city"
+                   app:ms_arrow_tint="@color/colormain"
+                   android:textColor="@color/colormain"
+                   app:ms_background_color="@color/colorAccent_dark"
+                   app:ms_dropdown_height="wrap_content"
+                   app:ms_dropdown_max_height="@dimen/max_dropdown_height"
+                   android:hint="@string/select_city"/>
+           </TableRow>
+
+
+           <TableRow
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               >
+               <ProgressBar
+                   android:visibility="gone"
+                   android:id="@+id/progressarea"
+                   android:layout_centerInParent="true"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+               <com.jaredrummler.materialspinner.MaterialSpinner
+                   android:visibility="gone"
+                   android:id="@+id/aoArea"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_marginBottom="16dp"
+                   android:layout_weight="1"
+                   app:ms_arrow_tint="@color/colormain"
+                   android:textColor="@color/colormain"
+                   android:text="@string/area"
+                   app:ms_background_color="@color/colorAccent_dark"
+                   app:ms_dropdown_height="wrap_content"
+                   app:ms_dropdown_max_height="@dimen/max_dropdown_height"
+                   android:enabled="false"
+                   android:hint="@string/select_area"/>
+           </TableRow>
+
+
+           <TableRow
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               >
+               <RelativeLayout
+                   android:layout_weight="1"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   >
+                   <ProgressBar
+                       android:id="@+id/progressreasons"
+                       android:layout_centerInParent="true"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content" />
+                   <TextView
+                       android:visibility="gone"
+                       android:id="@+id/reload_btn"
+                       android:background="@drawable/ic_refresh_black_24dp"
+                       android:layout_centerInParent="true"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content" />
+
+               <TextView
+                   android:id="@+id/tv_list_reasons"
+                   android:layout_below="@+id/step_three"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/list_reasons"
+                   android:paddingStart="@dimen/mini_padding"
+                   android:paddingTop="@dimen/mini_padding"
+                   />
+               <android.support.v7.widget.RecyclerView
+                   android:layout_margin="@dimen/mini_margin"
+                   android:layout_below="@+id/tv_list_reasons"
+                   android:id="@+id/reasonslist"
+                   android:layout_width="match_parent"
+                   android:layout_height="200dp"
+                   android:background="@drawable/rect_view"
+                   >
+
+               </android.support.v7.widget.RecyclerView>
+               </RelativeLayout>
+               </TableRow>
+
+           <TableRow
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               >
+               <RelativeLayout
+                   android:layout_weight="1"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   >
+
+               <TextView
+                   android:id="@+id/tv_optional"
+                   android:layout_below="@+id/step_three"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/optional"
+                   android:paddingStart="@dimen/mini_padding"
+                   android:paddingTop="@dimen/mini_padding"
+                   />
+               <EditText
+                   android:layout_margin="@dimen/mini_margin"
+
+                   android:layout_below="@+id/tv_optional"
+                   android:padding="8dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/et_any_comment"
+                   android:textSize="@dimen/small_text_size"
+                   android:hint="@string/any_comment"
+                   android:minLines="4"
+                   android:maxLines="3"
+                   android:layout_marginBottom="16dp"
+                   android:background="@drawable/rect_view"
+                   />
+               </RelativeLayout>
+
+           </TableRow>
+
+           <Button
+                   android:gravity="center"
+                   android:textSize="15dp"
+                   android:layout_weight="1"
+                   android:id="@+id/btn_add"
+                   style="@style/material_button"
+                   android:text="@string/add"
+                   android:layout_gravity="center"
+                   />
+
+       </TableLayout>
+
+        <ProgressBar
+            android:visibility="gone"
+            android:id="@+id/mprogress"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+   </LinearLayout>
+
+
+</merge>

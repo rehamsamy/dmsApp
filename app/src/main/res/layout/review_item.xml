@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+
+    android:padding="10dp"
+    android:orientation="vertical"
+    app:cardCornerRadius="5dp">
+
+
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:background="@color/mdtp_accent_color"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/userImage"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/userprofile"
+                    android:layout_alignParentLeft="true"/>
+                <TextView
+                    android:layout_toRightOf="@id/userImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="MAhmoud"
+                    android:padding="10dp"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/authorName"/>
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="it's very good app."
+                android:padding="10dp"
+                android:id="@+id/comment"
+                />
+
+            <RatingBar
+                android:id="@+id/rateingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:numStars="5"
+                android:stepSize="1"
+                android:rating="3"
+                style="@style/Base.Widget.AppCompat.RatingBar.Indicator"
+
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                >
+
+                <EditText
+                    android:id="@+id/replyIdEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+
+                    android:layout_marginEnd="12dp"
+                    android:layout_toStartOf="@+id/replyImageBtn"
+                    android:hint="@string/Reply" />
+                <ImageButton
+                    android:id="@+id/replyImageBtn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/ic_menu_send"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    />
+
+
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/arrowController"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/comments"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Comments"
+                    android:layout_centerInParent="true"
+
+                    />
+                <ImageView
+                    android:id="@+id/arrowDown"
+                    android:layout_toRightOf="@id/comments"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/arrow_down_black"
+                    android:visibility="visible"
+                    />
+
+                <ImageView
+                    android:id="@+id/arrowUp"
+
+                    android:layout_toRightOf="@id/comments"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/arrow_up"
+                    android:visibility="gone"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
+
+
+
+        <android.support.v7.widget.CardView
+            android:background="#666"
+            android:layout_marginTop="10dp"
+            android:id="@+id/developerReplyContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:cardCornerRadius="5dp"
+            android:layout_marginLeft="15dp"
+            android:elevation="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="5dp"
+                android:layout_height="fill_parent"
+                android:background="#000"
+                android:paddingTop="10dp"
+                ></TextView>
+            <TextView
+                android:id="@+id/developerReply"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="developer "
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:padding="10dp"
+
+
+                />
+        </android.support.v7.widget.CardView>
+
+
+
+</LinearLayout>

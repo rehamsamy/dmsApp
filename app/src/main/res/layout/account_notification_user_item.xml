@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_small"
+    app:cardCornerRadius="10dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        >
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/Base.Theme.AppCompat.Light.DarkActionBar"
+            android:checked="false"
+            android:id="@+id/checkbox"
+            />
+
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_image"
+            android:text="@string/username"
+            android:gravity="center"
+            android:textSize="25dp"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:layout_below="@id/name"
+            android:id="@+id/cardIdContainer"
+            android:padding="@dimen/small_padding"
+            >
+
+            <ImageView
+                android:id="@+id/cardIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/card_id"
+                android:paddingLeft="@dimen/margin_small"
+                />
+            <TextView
+                android:id="@+id/cardId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/card_id"
+                android:paddingLeft="@dimen/small_padding"
+                android:textSize="18dp"
+                />
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:layout_below="@id/cardIdContainer"
+            android:id="@+id/emailContainer"
+            android:padding="@dimen/small_padding"
+            >
+
+            <ImageView
+                android:id="@+id/emailIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/email"
+                android:paddingLeft="@dimen/margin_small"
+                />
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/info_email"
+                android:paddingLeft="@dimen/small_padding"
+
+                android:textSize="18dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:layout_below="@id/emailContainer"
+            android:padding="@dimen/small_padding"
+
+            android:id="@+id/phoneContainer">
+
+            <ImageView
+                android:id="@+id/phoneIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/phone"
+                android:paddingLeft="@dimen/margin_small"
+                />
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/contact_phone"
+                android:paddingLeft="@dimen/small_padding"
+
+                android:textSize="18dp"
+                />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:padding="@dimen/small_padding"
+            android:layout_below="@id/phoneContainer"
+            android:id="@+id/typeContainer">
+
+            <ImageView
+                android:id="@+id/typeIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/user_type"
+                android:paddingLeft="@dimen/margin_small"
+                />
+            <TextView
+                android:id="@+id/type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/provider"
+                android:paddingLeft="@dimen/small_padding"
+
+                android:textSize="18dp"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

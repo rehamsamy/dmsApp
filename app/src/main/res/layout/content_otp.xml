@@ -1,0 +1,68 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+<TextView
+    android:textColor="@color/colormain"
+    style="@style/large_title_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:textSize="@dimen/title_text_size"
+    android:text="@string/verify_mobile_number"
+    android:textStyle="bold" />
+
+
+<TextView
+android:textColor="@color/colormain"
+style="@style/title_text"
+android:textSize="@dimen/title_text_size"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="@string/enter_the_code_received_via_sms" />
+
+<android.support.design.widget.TextInputLayout
+android:id="@+id/tinputCode"
+android:layout_width="200dp"
+android:layout_height="wrap_content"
+android:layout_marginBottom="20dp"
+android:layout_marginTop="40dp">
+
+<EditText
+    android:id="@+id/etCode"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="@string/verification_code"
+    android:inputType="number"
+    android:maxLength="6"
+    android:textSize="@dimen/title_text_size"
+    android:textColorHint="@color/colormain"
+    android:textColor="@color/colormain"
+    android:maxLines="1" />
+
+</android.support.design.widget.TextInputLayout>
+
+<Button
+android:id="@+id/btnSubmit"
+style="?android:textAppearanceSmall"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginTop="16dp"
+android:background="@drawable/roundedtop"
+android:paddingBottom="@dimen/mini_margin"
+android:paddingLeft="@dimen/little_margin"
+android:textColor="@color/colormain"
+android:paddingRight="@dimen/little_margin"
+android:textAllCaps="false"
+android:paddingTop="@dimen/mini_margin"
+android:text="@string/submit"
+android:textSize="@dimen/title_text_size"
+android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Resend_Code"
+        android:textColor="@color/colorAccentGreen"
+        android:layout_marginTop="@dimen/margin_mini"
+
+        />
+
+</merge>

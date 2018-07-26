@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/iBtnCloseBtn"
+        style="@style/material_toolbar_image_button"
+        android:src="@mipmap/ic_close_light"
+        tools:ignore="ContentDescription"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/hr_recyclerView"
+        android:layoutAnimation="@anim/layout_anim"
+
+        />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/hr_progress_bar"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/hr_emtpy_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/msg_empty_user"
+            android:textSize="18sp"
+            android:textColor="@color/colormain"
+            android:drawableTop="@drawable/ic_no_connection_blue_grey_500_48dp"
+            android:visibility="gone"/>
+    </FrameLayout>
+</LinearLayout>

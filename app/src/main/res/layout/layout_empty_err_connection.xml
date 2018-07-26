@@ -1,0 +1,23 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:text="@string/label_not_found_notifictaion"
+    android:textSize="22sp"
+    android:drawableTop="@drawable/ic_notification_black_48dp"
+    android:id="@+id/tv_empty_notfi"
+    android:visibility="gone"
+    />
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_gravity="center"
+android:text="@string/label_no_internet"
+android:textSize="22sp"
+android:drawableTop="@drawable/ic_no_connection_blue_grey_500_48dp"
+android:id="@+id/tv_no_connection"
+android:visibility="gone"
+android:textColor="@color/colormain"
+    />
+</merge>

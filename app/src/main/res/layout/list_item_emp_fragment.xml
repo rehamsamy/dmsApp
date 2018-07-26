@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    android:background="@color/mdtp_white"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+
+    <TextView
+
+        android:id="@+id/tv_member_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif"
+        android:maxLines="2"
+        android:paddingBottom="5dp"
+        android:paddingEnd="5dp"
+        android:paddingStart="5dp"
+        android:textAlignment="viewStart"
+        android:textSize="@dimen/title_text_size"
+        android:textColor="@color/colormain"
+        android:textStyle="normal|bold"
+        tools:text="Emp Name " />
+
+    <TextView
+        android:id="@+id/tv_card_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_member_name"
+        android:paddingBottom="5dp"
+        android:paddingEnd="5dp"
+        android:paddingStart="5dp"
+        android:textColor="@color/colormain"
+        android:textAlignment="viewStart"
+        android:textSize="14sp"
+        tools:text="Card Id" />
+
+
+
+
+
+</RelativeLayout>

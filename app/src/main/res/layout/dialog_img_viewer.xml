@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<FrameLayout android:id="@+id/relativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+        <ImageView
+            android:contentDescription="@string/upload_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/img_imgview"
+            android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@+id/download_btn"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:background="@color/mdtp_red"
+        android:text="@string/download"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:textColor="@color/colorAccentRed"
+        android:drawableRight="@drawable/ic_download"
+        />
+    <Button
+        android:id="@+id/button_close"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignRight="@+id/relativeLayout1"
+        android:layout_alignTop="@+id/relativeLayout1"
+
+        android:background="@mipmap/ic_close_light"
+        android:layout_gravity="right|end"/>
+    </FrameLayout>
+
+
+

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single"
+        >
+
+        <item
+            android:id="@+id/action_complaints"
+            android:checkable="false"
+            android:icon="@drawable/ic_report_problem"
+            android:orderInCategory="100"
+            android:title="@string/action_complaints" />
+
+        <item
+            android:id="@+id/action_check_status"
+            android:icon="@drawable/ic_check_status"
+            android:orderInCategory="100"
+            android:title="@string/action_check_status"
+            android:visible="false"
+            tools:visible="true" />
+
+        <item
+            android:id="@+id/action_about"
+            android:checkable="false"
+            android:icon="@mipmap/ic_info"
+            android:orderInCategory="100"
+            android:title="@string/action_about" />
+
+
+
+
+
+
+
+
+
+        <item
+            android:id="@+id/action_notifications"
+            android:checkable="false"
+            android:icon="@drawable/ic_notifications_none"
+            android:orderInCategory="100"
+            android:title="@string/action_notifications"
+            app:actionViewClass="android.widget.TextView">
+
+        </item>
+        <item
+            android:id="@+id/action_chat"
+            android:title="@string/chat_title"
+            android:checkable="false"
+            android:icon="@drawable/ic_chat_black_24dp"
+            android:orderInCategory="100" />
+
+
+
+        <item
+            android:id="@+id/action_batch"
+            android:icon="@drawable/ic_batch"
+            android:orderInCategory="100"
+            android:title="@string/action_batch"
+            tools:visible="true" />
+
+
+        <item
+            android:id="@+id/action_orders"
+            android:icon="@drawable/pharmacy_icon"
+            android:orderInCategory="100"
+            android:title="@string/action_orders"
+            tools:visible="true" />
+
+        <item android:id="@+id/action_card_checker"
+            android:icon="@drawable/ic_cardid_36dp"
+            android:orderInCategory="100"
+            android:title="@string/action_scan_card"
+            tools:visible="true"
+            />
+
+
+
+
+
+
+
+
+
+
+
+
+    </group>
+
+
+</menu>

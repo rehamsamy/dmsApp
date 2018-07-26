@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/header_toolbar"
+        />
+
+
+    <com.jaredrummler.materialspinner.MaterialSpinner
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        app:ms_arrow_tint="@color/colorPrimary"
+        app:ms_dropdown_max_height="350dp"
+        android:textStyle="bold"
+        android:layout_below="@id/toolbar"
+        android:layout_margin="@dimen/margin_medium"
+        android:id="@+id/typeSpinner" />
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerView"
+        android:layout_below="@+id/typeSpinner"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:visibility="gone"
+/>
+    <ProgressBar
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progress"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/empty_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/empty_account"
+        android:layout_centerInParent="true"
+        android:textSize="@dimen/text_size_large"
+        android:drawableTop="@drawable/ic_account_box_black_24dp"/>
+
+
+</RelativeLayout>

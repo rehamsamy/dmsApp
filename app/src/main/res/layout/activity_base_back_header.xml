@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <com.dmsegypt.dms.ux.custom_view.SwipeBackCoordinatorLayout
+        android:id="@+id/swipeBackView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+
+        <com.dmsegypt.dms.ux.custom_view.nestedScrollView.NestedScrollAppBarLayout
+            android:id="@+id/appBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            app:theme="@style/ToolbarTheme">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/logotitle"
+                app:titleTextColor="@color/colorLine_light"
+                app:layout_scrollFlags="snap|enterAlways"
+                app:navigationIcon="@drawable/ic_toolbar_back_light"
+                app:popupTheme="@style/PopupMenuTheme"
+                app:title=" "
+                tools:ignore="UnusedAttribute"
+                android:elevation="8dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/toolbar_title_size"
+                    android:textColor="@color/mdtp_white"
+                    android:id="@+id/toolbar_title" />
+            </android.support.v7.widget.Toolbar>
+        </com.dmsegypt.dms.ux.custom_view.nestedScrollView.NestedScrollAppBarLayout>
+
+        <FrameLayout
+            android:id="@+id/flMainContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </com.dmsegypt.dms.ux.custom_view.SwipeBackCoordinatorLayout>
+</RelativeLayout>

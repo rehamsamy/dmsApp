@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single"
+        >
+
+        <item
+            android:id="@+id/action_about"
+            android:checkable="false"
+            android:icon="@mipmap/ic_info"
+            android:orderInCategory="100"
+            android:title="@string/action_about" />
+
+
+
+        <item
+            android:id="@+id/action_network"
+            android:checkable="true"
+            android:icon="@drawable/arrow_down_black"
+            android:orderInCategory="100"
+            android:title="@string/action_network"
+            app:actionLayout="@layout/menu_layout"            />
+        <item
+            android:id="@+id/sub_action_network_search"
+            android:checkable="true"
+            android:icon="@drawable/ic_search"
+            android:orderInCategory="100"
+            android:title="@string/action_search"
+            android:visible="false"
+            app:actionLayout="@layout/menu_layout"
+
+            />
+        <item
+            android:id="@+id/action_addprovider"
+            android:checkable="true"
+            android:icon="@drawable/ic_add"
+            android:orderInCategory="100"
+            android:title="Add Provider"
+            android:visible="false"
+            app:actionLayout="@layout/menu_layout"
+            />
+        <item
+            android:id="@+id/action_chronic_medication"
+            android:icon="@drawable/ic_chronic_medication"
+            android:orderInCategory="100"
+            android:title="@string/action_chronic_medication"
+            android:visible="true"
+            tools:visible="true" />
+        <item
+            android:id="@+id/requestsMenu"
+            android:checkable="false"
+            android:icon="@drawable/arrow_down_black"
+            android:orderInCategory="100"
+            android:title="@string/action_requests"
+            app:actionLayout="@layout/menu_layout"
+            />
+
+        <item
+            android:id="@+id/action_requests"
+            android:checkable="false"
+            android:icon="@drawable/ic_request"
+            android:orderInCategory="100"
+            android:title="@string/action_requests"
+            android:visible="false"
+            app:actionLayout="@layout/menu_layout"
+            />
+
+        <item
+            android:id="@+id/action_approve"
+            android:icon="@drawable/ic_aprove"
+            android:orderInCategory="100"
+            android:title="@string/action_approve"
+            android:visible="false"
+            app:actionLayout="@layout/menu_layout"
+            />
+
+
+
+        <item
+            android:id="@+id/action_family"
+            android:icon="@drawable/ic_family_members"
+            android:orderInCategory="100"
+            android:title="@string/action_family" />
+
+        <item
+            android:id="@+id/action_employees"
+            android:icon="@drawable/arrow_down_black"
+            android:orderInCategory="100"
+            android:title="@string/action_employees"
+            android:visible="true"
+            tools:visible="true"
+            app:actionLayout="@layout/menu_layout"
+            />
+
+
+        <item
+            android:id="@+id/action_view_employees"
+            android:icon="@drawable/ic_people_outline"
+            android:orderInCategory="100"
+            android:title="View Employees"
+            android:visible="false"
+            app:actionLayout="@layout/menu_layout"
+            />
+        <item
+            android:id="@+id/action_editcard"
+            android:icon="@drawable/ic_edit_card"
+            android:orderInCategory="100"
+            android:title="@string/action_edit_card"
+            android:visible="false"
+            app:actionLayout="@layout/menu_layout"
+
+            />
+        <item
+            android:id="@+id/action_contract"
+            android:title="@string/title_summray_contract"
+            android:checkable="false"
+            android:icon="@drawable/ic_contract"
+            android:orderInCategory="100" />
+
+        <item
+            android:id="@+id/action_indmnity"
+            android:icon="@drawable/ic_indimnty"
+            android:orderInCategory="100"
+            android:title="@string/action_indmnity"
+            android:visible="true"
+            tools:visible="true" />
+
+        <item
+            android:id="@+id/action_massenger"
+            android:icon="@drawable/ic_motorcycle"
+            android:orderInCategory="100"
+            android:title="@string/action_Massenger" />
+
+        <item
+            android:id="@+id/action_notifications"
+            android:checkable="false"
+            android:icon="@drawable/ic_notifications_none"
+            android:orderInCategory="100"
+            android:title="@string/action_notifications"
+            >
+
+        </item>
+
+
+        <item
+            android:id="@+id/action_complaints"
+            android:checkable="false"
+            android:icon="@drawable/ic_report_problem"
+            android:orderInCategory="100"
+            android:title="@string/action_complaints" />
+
+
+       
+
+    </group>
+
+
+</menu>

@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="16dp"
+
+        android:paddingBottom="8dp">
+
+        <LinearLayout
+            android:id="@+id/lineardmsspinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/mini_margin"
+            >
+            <EditText
+                android:id="@+id/et_search"
+                android:background="@drawable/rect_view"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:drawableRight="@drawable/ic_search"
+                android:padding="@dimen/mini_padding"
+                android:hint="@string/pharmacy_name"
+                android:textSize="@dimen/small_text_size"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+            <com.jaredrummler.materialspinner.MaterialSpinner
+                android:hint="@string/label_choose_batch"
+                android:id="@+id/mpharmacy"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/label_choose_pharmcy"
+                android:textSize="@dimen/small_text_size"
+                android:textColor="@color/colormain"
+                app:ms_arrow_tint="@color/colormain"
+                app:ms_background_color="@color/colorAccent_dark"
+                app:ms_dropdown_height="wrap_content"
+                app:ms_dropdown_max_height="@dimen/max_dropdown_height" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        >
+        <EditText
+            android:background="@drawable/rect_view"
+            android:id="@+id/batch_sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/label_choose_batch"
+            android:layout_weight="1"
+            android:textSize="@dimen/small_text_size"
+            android:padding="8dp"/>
+        <com.jaredrummler.materialspinner.MaterialSpinner
+            android:id="@+id/check_sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_choose_check_status"
+            android:layout_weight="1"
+            android:textSize="@dimen/small_text_size"
+            android:layout_marginRight="8dp"
+            android:layout_marginEnd="8dp"/>
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_button"
+            android:layout_gravity="center"
+            android:id="@+id/search_button"
+            android:src="@drawable/ic_search"
+
+
+
+            />
+
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalView"
+        android:fillViewport="true"
+        android:layout_height="match_parent"
+        android:scrollbars="horizontal|vertical"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="5dip"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:background="@color/colormain"
+                android:id="@+id/linearheader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorAccentRed"
+                    android:text="@string/row_number"
+                    android:drawableRight="@null"
+                    style="@style/summary_text_header"
+                    />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/color_white"/>
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="120dp"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    >
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:id="@+id/header_linear_etbatchno"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="100"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:layout_weight="80"
+                            android:id="@+id/filter_batch_num"
+                            android:layout_height="wrap_content"
+                            android:layout_width="0dp"
+                            android:background="@color/mdtp_white"
+                            android:layout_gravity="center"
+
+                            />
+                        <ImageButton
+                            android:layout_weight="20"
+                            android:id="@+id/cancel_filter_batchno"
+                            android:layout_gravity="center"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ic_cancel"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/header_linear_batchno"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/batch_num"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="@string/label_batch_no"
+                            android:textColor="@color/color_white"
+                            android:layout_gravity="center_vertical"
+                            />
+                        <ImageButton
+                            android:id="@+id/btn_filter_batchno"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ic_filter_list_"
+                            />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/color_white"/>
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="100dp"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="@string/label_prv_no"
+                        style="@style/summary_text_header"
+                        android:drawableRight="@null"
+
+                        />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/color_white"/>
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="100dp"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="@string/label_prv_name"
+                        style="@style/summary_text_header"
+                        android:drawableRight="@null"
+
+                        />
+
+
+                </LinearLayout>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/color_white"/>
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="140dp"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="@string/label_systemamt"
+                        style="@style/summary_text_header"
+                        android:drawableRight="@null"
+
+                        />
+                </LinearLayout>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/color_white"/>
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="140dp"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="@string/sum_checkamt"
+                        style="@style/summary_text_header"
+                        android:drawableRight="@null"
+
+
+                        />
+                </LinearLayout>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/color_white"/>
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="120dp"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="@string/sum_checkstatus"
+                        style="@style/summary_text_header"
+                        android:drawableRight="@null"
+
+                        />
+
+                </LinearLayout>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/color_white"/>
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="140dp"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="@string/label_systemno"
+                        style="@style/summary_text_header"
+                        android:drawableRight="@null"
+
+                        />
+
+                </LinearLayout>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/color_white"/>
+
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="140dp"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="@string/sum_datastatment"
+                        style="@style/summary_text_header"
+                        android:drawableRight="@null"
+
+                        />
+                </LinearLayout>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/color_white"/>
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="120dp"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="@string/sum_manualno"
+                        style="@style/summary_text_header"
+                        android:drawableRight="@null"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:clickable="true"
+                android:layout_below="@id/linearheader"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/recyclerView"/>
+        </RelativeLayout>
+
+    </HorizontalScrollView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:id="@id/progress_bar"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/emtpy_tv"
+            android:layout_gravity="center"
+            android:text="@string/empty_batch"
+            android:textSize="20sp"
+            android:visibility="gone"/>
+    </FrameLayout>
+
+</LinearLayout>

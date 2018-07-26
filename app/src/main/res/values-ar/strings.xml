@@ -1,0 +1,703 @@
+<resources>
+    <string name="app_name">DMS Egypt</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">الايميل</string>
+    <string name="prompt_password">كلمه السر</string>
+    <string name="action_sign_in">تسجيل دخول</string>
+    <string name="action_sign_up">انشاء حساب</string>
+    <string name="error_invalid_fullname">يجب ان يكون الاسم الكامل مكون من ثلاث اسماء</string>
+    <string name="error_invalid_email">هذا الايميل غير صحيح</string>
+    <string name="error_invalid_cardID">كود الكارت غير صحيح</string>
+    <string name="error_invalid_nationalID">الرقم القومي غير صحيح</string>
+    <string name="error_invalid_mobile">رقم الهاتف غير صحيح</string>
+    <string name="error_not_match_mobile">رقم الهاتف غير مطابق</string>
+    <string name="error_invalid_short_password">كلمه السر قصيره جدا</string>
+    <string name="error_not_match_password">كلمه السر غير مطابقه</string>
+    <string name="error_invalid_long_password">كلمه السر طويله جدا</string>
+    <string name="error_incorrect_password">هذا الباسورد غير صحيح</string>
+    <string name="error_field_required">هذا الحقل مطلوب</string>
+    <string name="error_cardID_registered_before">رقم الكارت مسجل من قبل</string>
+    <string name="error_username_not_available">اسم المستخدم غير موجود</string>
+    <string name="error_no_data_available">لا توجد بيانات</string>
+    <string name="error_verification_code">الكود غير مطابق</string>
+    <string-array name="usertype">
+        <item>Normal User</item>
+        <item>HR</item>
+        <item>Provider</item>
+        <item>DMS Member</item>
+    </string-array>
+
+    <string name="error_not_available_address">عنوان غير معروف</string>
+    <string name="not_available_address"><!--Unknown address--></string>
+    <string name="not_available_phone"><!--Unknown phone number--></string>
+    <string name="not_available_email"><!--Unknown email address--></string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing emailcompletions."</string>
+    <string name="welcome_to_dms">مرحبا بك في DMS</string>
+    <string name="last_name">الاسم الثاني</string>
+    <string name="first_name">الاسم الاول</string>
+    <string name="forgot_password">نسيت كلمه المرور؟</string>
+    <string name="submit">اضافه</string>
+    <string name="card_id">كود الكارت</string>
+    <string name="national_id">الرقم القومي</string>
+    <string name="title_activity_main">الرئيسيه</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">الاعدادات</string>
+    <string name="unknown_user">حدث خطأ اثناء الاتصال بالسيرفر</string>
+    <string name="action_home">الرئيسيه</string>
+    <string name="action_notifications">الاشعارات</string>
+    <string name="action_about">عن DMS</string>
+    <string name="skip">تخطي</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search">بحث </string>
+    <string name="city">المدينه</string>
+    <string name="area">المنطقه</string>
+    <string name="type">النوع</string>
+    <string name="details">التفاصيل</string>
+    <string name="transition_photo_image">photo_image</string>
+    <string name="transition_photo_background">photo_background</string>
+    <string name="action_share">مشاركه</string>
+    <string name="action_edit">تعديل</string>
+    <string name="title_activity_base">BaseActivity</string>
+    <string name="title_activity_notification">الاشعارات</string>
+    <string name="view_profile">رؤية الصفحه الشخصيه</string>
+    <string name="mobile_number">رقم الهاتف</string>
+    <string name="transition_user_avatar">user_avatar</string>
+    <string name="my_account">حسابي</string>
+    <string name="notification">الاشعارات</string>
+    <string name="change_password">تغيير كلمه السر</string>
+    <string name="Enter_new_password">ادخل كلمه سر جديده</string>
+    <string name="info_more_details">المزيد من التفاصيل</string>
+    <string name="info_address">العنوان</string>
+    <string name="info_email">الايميل</string>
+    <string name="info_phone_number">رقم الهاتف</string>
+    <string name="info_type">النوع</string>
+    <string name="username">اسم المستخدم</string>
+    <string name="full_name">الاسم ثلاثي أنجليزي</string>
+    <string name="prompt_old_password">كلمه المرور القديمه</string>
+    <string name="prompt_new_password">كلمه المرور الجديده</string>
+    <string name="content_about_details">أسست الشركة الماسبة للخدمات الطبية في عام 2002  من قبل افراد يعتبرون هم من مؤسسي صناعة التأمين الطبي في جمهورية مصر العربية الذين يغتبرون ان هدفهم الاساسي هو تقديم رعاية صحية وطبية علي اعلي مستوي تليق بالمواطن المصري دون تحمليه باعباء اضافية تتعب كاهله
+ومن اجل حل هذه المعضلة فلقد انشات الشركة الماسية شبكة طبية من خيرة مقدمي الخدمة في مصر بل والعالم اجمع وذلك لايماننا في الشركة ان عملائنا الكرام يستحقون افضل رعاية صحية دون اعباء عالية.
+وتعتبر الشبكة الطبية للشركة الماسية توفر لموظفينك تنوع وتعدد لدي كافة مقدمي الخدمة من كافة التخصصات وعلي اعلي مستويات الكفاءة والثقة حيث تشمل الشبكة غالبية المستشفيات بفئاتها المختلفة لتغطية كافة المستويات وكذلك شبكة هائلة من اساتذة كليات الطب في شتي التخصصات بالاضافة الي معامل التحاليل ومراكز الاشعات ذات الاسم والسمعة العالية .
+كل ذلك تم مع مراعاة ضرورة التوزيع الجغرافي للشبكة الطبية حتي نضمن  لموضفينك انهم سيتمتعون بالتغطية الطبية حيثما كانوا واينما كانوا في اي وقت وفي اي مكان داخل او حتي خارج جمهورية مصر العربية
+ولقد اعتمدنا علي شركاء عالمين لضمان ان المؤمن عليه في حالة سفره في اي مكان في العالم اذ ما احتاج الي رعاية صحية او حدوث اي حدث طارئ يجدنا دائما هناك بجواره نتحمل التكاليف عنه ونغطيه تغطيه كامله علي اكمل وجهه
+لتحقيق كافة ما سبق فان الشركة الماسية قد تأسست برأس مالي مصري قدره 90 مليون جنيه مصري مع نمو متزايد في حجم المبيعات وعليه في حجم رأس المالي</string>
+    <string name="prompt_password_confirm">تاكيد كلمه السر</string>
+    <string name="mobile_number_confirm">تاكيد رقم الهاتف</string>
+    <string name="action_complaints">الشكاوي</string>
+    <string name="action_requests">الموافقات الطبيه</string>
+    <string name="action_network">بحث في الشبكه الطبيه</string>
+    <string name="action_sign_out">تسجيل خروج</string>
+    <string name="action_family">افراد العائله</string>
+    <string name="prompt_birth_date">تاريخ الميلاد</string>
+    <string name="dms_website"><u>DMS website</u></string>
+    <string name="action_edit_profile">تعديل الصفحه الشخصيه</string>
+    <string name="unknown_error">خطأ غير معروف</string>
+    <string name="verify_mobile_number">تفعيل رقم هاتفك</string>
+    <string name="enter_the_code_received_via_sms">ادخل الكود المرسل عن طريق الرساله القصيره</string>
+    <string name="verification_code">كود التاكيد</string>
+    <string name="d_m_s_growth">D.M.S GROWTH</string>
+    <string name="history">التاريخ</string>
+    <string name="error_inernet_connection">تاكد من اتصالك بالانترنت</string>
+    <string name="search_by_name">البحث بالاسم او رقم الكارت</string>
+    <string name="msg_loading">تحميل...</string>
+    <string name="coming_soon">قريبا</string>
+    <string name="api_store_data_url">http://carreto.pt/tools/android-store-version/?package=com.dmsegypt.dms</string>
+    <string name="provider">مقدم الخدمه</string>
+    <string name="no_providers">لايوجد مقدمي خدمه</string>
+    <string name="choose_complains_type">اختر نوع الشكوي</string>
+    <string name="service">الخدمه</string>
+    <string name="title">العنوان</string>
+    <string name="description">التفاصيل</string>
+    <string name="description_hint">التفاصيل.</string>
+    <string name="upload_image">اختار صوره</string>
+    <string name="complaint_successed">تم ارسال الشكوي بنجاح</string>
+    <string name="yes">نعم</string>
+    <string name="no">لا</string>
+    <string name="delete_member_confirmation">هل تريد حذف هذا الفرد</string>
+    <string name="add_new_member">اضافه فرد جديد</string>
+    <string name="action_add_member">اضافه فرد</string>
+    <string name="action_switch_user">تغيير مستخدم</string>
+    <string name="action_employees">الموظفيين</string>
+    <string name="search_by_emp">البحث باسم المستخدم او رقم الكارت</string>
+    <string name="add_new_employees">اضافه موظف جديد</string>
+    <string name="action_check_status">تحقق الحاله</string>
+    <string name="label_check_number">تحقق الرقم :</string>
+    <string name="label_date">التاريخ:</string>
+    <string name="label_status">الحاله</string>
+    <string name="Categoryapprove">اختر النوع</string>
+    <string name="Code">الكود</string>
+    <string name="company">الشركه</string>
+
+
+    <!-- ======== Requests ========== -->
+    <string name="take_photo">التقاط صوره</string>
+    <string name="upload_photo">اختر صوره</string>
+    <string name="add_new_photo">اضافه صوره جديده</string>
+    <string name="action_approve">موافقه استثنائيه تليفونيه</string>
+    <string name="Spicific">محدد</string>
+    <string name="Category">اختر نوع الخدمه</string>
+    <string name="send_request">ارسال طلب</string>
+    <string name="title_hint">العنوان...</string>
+    <string name="action_chronic_medication">العلاج الشهري</string>
+    <string name="warning_text"> سوف يتم خصم هذه الادوية من رصيدك \n في حالة عدم الموافقه \n أو الاعتراض يرجي الاتصال \n علي رقم 201205566395+</string>
+    <string name="label_push_message">الاشعارات:</string>
+    <string name="ok">موافق</string>
+    <string name="label_welcome">مرحبا</string>
+    <string name="label_switch_user">تغيير مستخدم</string>
+    <string name="label_not_found_notifictaion">لايوجد اشعارات</string>
+    <string name="label_no_conenction">حدث خطأويرجي التاكد من الاتصال بالانترنت واعاده المحاوله</string>
+    <string name="label_no_internet">لايوجد اتصال</string>
+    <string name="error_exceed_size">Image size must not exceed 1MB !!</string>
+    <string name="action_reload">اعاده تحميل</string>
+    <string name="label_chronic_title">علاجك الشهري</string>
+    <string name="err_no_medicine">لاتوجد ادويه</string>
+    <string name="label_upload">اختار الروشته</string>
+    <string name="msg_send_request">ارسال الطلب</string>
+    <string name="mesg_reuqest_send">تم ارسال طلبك بنجاح سنتواصل معك في اقرب وقت ممكن</string>
+    <string name="err_empty_field">حقل فارغ</string>
+    <string name="err_empty_category">اختر نوع الخدمه</string>
+    <string name="error_not_select_requets">اختر نوع الخدمه</string>
+    <string name="google_place_api">AIzaSyB7McY1VtTgTk7BlMeGrHzw5XNdZhIsKu8</string>
+
+    <string name="msg_reolad">اعاده تحميل</string>
+    <string name="open_camera">اختر الكاميرا</string>
+    <string name="open_gallery">اختر المعرض</string>
+    <string name="msg_empty_user">لا يوجد مستخدمين</string>
+    <string name="err_family_member">لا يوجد افراد</string>
+    <string name="Gender">النوع</string>
+    <string name="relativerelation">صله القرابه</string>
+    <string name="relationcard">رقم كارت الموظف</string>
+    <string name="cost_center">مركز التكلفه</string>
+    <string name="add_new_prescription">اضافه روشته جديده</string>
+    <string name="action_chronic">العلاج الشهري</string>
+    <string name="action_edit_card">تعديل فئه الكارت</string>
+    <string name="Degree">الدرجه</string>
+    <string name="full_name_arab">الاسم ثلاثي عربي</string>
+    <string name="msg_request_sent">تم ارسال الطلب بنجاح</string>
+    <string name="err_data_load_failed">فشل في الاتصال</string>
+    <string name="action_UserRequests">طلباتي</string>
+    <string name="refuse">رفض</string>
+    <string name="notes_hint">ملاحظات</string>
+    <string name="action_send_reply">اضافه رد</string>
+    <string name="msg_Reply_sent">تم ارسال الرد بنجاح</string>
+    <string name="error_no_data_branch_available">no data branch avalabile</string>
+    <string name="change_languague">اختر اللغه</string>
+    <string name="birthdate_pick">اختر تاريخ الميلاد</string>
+    <string name="password_sent_to_email">تحقق من الايميل لاعاده تهئيه كلمه السر</string>
+    <string name="invalid_date">التاريخ غير صحيح</string>
+    <string name="select_request_type">اختر نوع الطلب</string>
+    <string name="edit_mobile">سيتم تسجيل خروجك لتفعيل رقم الموبايل الجديد</string>
+    <string name="permission_denied">تم رفض الاذن</string>
+    <string name="label_all">الكل</string>
+    <string name="edit">تعديل</string>
+    <string name="update_msg">يجب تحديث التطبيق لكي يعمل معك بشكل سليم</string>
+    <string name="emplyee">الموظف</string>
+    <string name="hint_class">الفئه</string>
+    <string name="relation">العلاقه</string>
+    <string name="close_app">هل تريد اغلاق التطبيق</string>
+    <string-array name="gender_list">
+        <item>ذكر</item>
+        <item>انثي</item>
+    </string-array>
+    <string-array name="family_member_list">
+        <item>أنا</item>
+        <item>زوجه ثانيه</item>
+        <item>زوج/زوجه</item>
+        <item>ابنه</item>
+        <item>ابن</item>
+        <item>الجد</item>
+        <item>الجده</item>
+        <item>ابن/ابنه</item>
+        <item>اخت</item>
+        <item>ام</item>
+        <item>اب</item>
+    </string-array>
+    <string-array name="approval_category_list">
+        <item>الفئه</item>
+        <item>رقم الكارت</item>
+    </string-array>
+
+    <string-array name="edit_card_option">
+        <item>نوع الطلب</item>
+        <item>طلب طباعه كارت</item>
+        <item>طلب اعاده فتح كارت</item>
+        <item>طلب تغير رقم موظف</item>
+        <item>طلب تغير اسم الموظف</item>
+    </string-array>
+
+    <string-array name="edit_card_reason">
+        <item>اختار السبب</item>
+        <item>بدل فاقد</item>
+        <item>تغير صوره</item>
+    </string-array>
+
+    <string name="location">زرار المكان</string>
+    <string name="chronicHelper">لطلب علاج شهري يمكنك الضغط علي الكاميرا لتحميل الروشته</string>
+
+    <string name="areyousure">هل أنت موافق علي غلق الابلكيشن</string>
+    <string name="cancel">cancel</string>
+    <string name="accept">موافقه</string>
+    <string name="welcomeguide">أهلا بك أنا مساعدك الشخصي</string>
+    <string name="next">الخطوة التاليه</string>
+    <string name="finish">شكرا لك</string>
+    <string name="press_here_to_upload_your_profile_image">اضغط هنا لتحميل الصوره الشخصيه</string>
+    <string name="enter_your_new_email">أدخل الايميل الجديد</string>
+    <string name="request_detail">تفاصيل</string>
+
+    <string name="enter_your_new_mobilenumber">أدخل رقم التليفون الجديد</string>
+    <string name="show_reply">اظهار الرد</string>
+
+    <string name="enteryourfullname">ملحوظه : يجب ألا يقل عن أول ثلاث أسماء \n ادخل الاسم بالكامل باللغه الانجليزيه</string>
+    <string name="enteryourfullnameArabic">ملحوظه : يجب الا يقل عن أول ثلاث أسماء \n ادخل الاسم بالكامل باللغه العربيه</string>
+    <string name="degreecondition">اذا كان المستخدم الذي تريد أضافته هو مستخدم جديد أختار "انا" .. اذا كان هناك صله بين المستخدم ومستخدم أخر يرجي اختيار الصله و كتابه رقم كارت المستخدم الاخر</string>
+    <string name="costcenterhelper">فرع الشركة (مركز التكلفة)</string>
+    <string name="AddressHelper">لاختيار العنزان عن طريق خريطه جوجل يرجي الضغط علي الايكون الخاصه بالعنوان .. او يمكنك كتابه العنوان اذا اردت </string>
+    <string name="requestHelper">مرحبا .. أذا اردت عمل طلب طبي يمكنك تحميل صوره الطلب و كتابه عنوان و أختيار نوع الطلب و كتابه تفاصيل الطلب ثم أرسال.</string>
+    <string name="select_city">من فضلك أختر المحافظه</string>
+    <string name="select_area">من فضلك أختر المنطقة</string>
+    <string name="select_type">من فضلك أختر النوع</string>
+    <string name="send_msg">أرسال...</string>
+    <string name="action_add_providers">أضافه مقدم خدمه</string>
+    <string name="hint_provider_name">أسم مقدم الخدمة</string>
+    <string name="contact_name">اسم الشخص</string>
+    <string name="action_edit_card_tool">تعديل كارت</string>
+    <string name="cant_connect_to_server">لا يمكن الاتصال بالسرفر</string>
+    <string name="contact_phone">رقم تليفون الشخص</string>
+    <string name="add_provider">أضافه مقدم خدمه</string>
+    <string name="msg_provider_sent_successsfully">لقد تم أرسال طلبك بنجاح</string>
+    <string name="msg_send_proivder_request">لقد تم أرسال طلبك بنجاح</string>
+    <string name="label_select_area">أختر المنطقة</string>
+    <string name="label_select_city">اختر المحافظة</string>
+    <string name="label_select_type">اختر نوع الخدمة</string>
+    <string name="option">نوع الطلب</string>
+    <string name="reopen_date">تاريخ اعاده فتح الكارت</string>
+    <string name="select_reason">أختار السبب</string>
+    <string name="err_short_field">الحقل صغير جدا</string>
+    <string name="err_field_is_big">الحقل كبير جدا</string>
+    <string name="intro_add_provider">اختر من الشريط الجانبي "اضافه مقدم خدمه" وأرسل طلب</string>
+    <string name="intro_print_card">اختر من الشريط الجانبي تعديل كارت لارسال طلب باعاده طباعه كارت مع أختيار السبب</string>
+    <string name="intro_change_card">اختر من الشريط الجانبي تعديل كارت لارسال طلب بتغير رقم كارت مع كتابه الرقم الجديد</string>
+    <string name="intro_reopen_card">اختر من الشريط الجانبي تعديل كارت لاعاده فتح كارت مع أختيار تاريخ اعاده الفتح</string>
+    <string name="intro_last_update">مقدمه عن أخر تعديل</string>
+    <string name="intro_no_last_update">حقيقا .. هذا التحديث لا شيء جديد</string>
+    <string name="msg_upload_img">يجب اختيار صوره</string>
+    <string name="label_not_found_provider">لايوجد مقدمي خدمه</string>
+    <string name="add_new_provider">اضافه مقدم خدمه</string>
+    <string name="pop_count">عدد سكان المنطقه </string>
+    <string name="action_move_to">سوف يتم نقلك الي صفحه تعديل كارت لارسال طلب اعاده فتح هذا الكارت</string>
+    <string name="reason_type">السبب</string>
+    <string name="title_reply">الرد</string>
+    <string name="download_image_text">لتحميل الصوره يرجي الضغط مطولا علي الصوره.</string>
+    <string name="label_new_level">تعديل كارت</string>
+    <string name="user_name">الاسم</string>
+    <string name="start_date_insurance">تاريخ بدايه التامين</string>
+    <string name="end_date_insurance">تاريخ نهايه التامين</string>
+    <string name="change_level">تعديل الكارت</string>
+    <string name="card_degree">درجه الفئه</string>
+    <string name="empty_request">لايوجد طلبات</string>
+    <string name="msg_accept">تم القبول</string>
+    <string name="hide_reply">اخفاء الرد</string>
+    <string name="msg_refuse">تم الرفض</string>
+    <string name="msg_waiting">جاري الرد</string>
+    <string name="err_empty_specific">فارغ</string>
+    <string name="empty_provider">لا يوجد مزود خدمه</string>
+    <string name="empty_cities">لا يوجد محافظات</string>
+    <string name="err_send_reply">فشل في ارسال الرد</string>
+    <string name="sucess_upload">تم تغيير الصوره الشخصيه بنجاح</string>
+    <string name="msg_upload">ارسال</string>
+    <string name="sucess_edit">تم حفظ البيانات بنجاح</string>
+    <string name="response_server_err">خطا في الاتصال</string>
+    <string name="action_send">ارسال</string>
+    <string name="medical">طبي</string>
+    <string name="hint_med_code_name">اسم او كود الدواء</string>
+    <string name="title_batch">خصومات مقدم الخدمه</string>
+    <string name="label_choose_pharmcy">اختار الصيدليه</string>
+    <string name="label_choose_batch">رقم الباتش</string>
+    <string name="label_choose_check_status">اختر موقف الشيك</string>
+    <string name="hint_search_pharmacy">ابحث باسم أو بكود الصيدليه</string>
+    <string name="empty_pharmcy">حقل فارغ</string>
+    <string name="empty_batch">حقل فارغ</string>
+    <string name="label_claimamt">مبلغ بعد المراجعة</string>
+    <string name="label_differenceamt">مبلغ الخصم</string>
+    <string name="label_systemamt">مبلغ قبل المراجعة</string>
+    <string name="label_medicine_count">عدد الادويه</string>
+    <string name="label_agreement">اتفاقيات</string>
+    <string name="label_total_row">كل الصفوف</string>
+    <string name="sum_prvcode">كود مقدم الخدمة</string>
+    <string name="sum_prvname">اسم مقدم الخدمة</string>
+    <string name="sum_systemamt">قيمة مبلغ السيستم</string>
+    <string name="sum_checkamt">قيمة مبلغ الشيك</string>
+    <string name="sum_checkstatus">موقف الشيك</string>
+    <string name="sum_systemno">قيمة مبلغ السيستم</string>
+    <string name="sum_datastatment">تاريخ المطالبة (ستيتمنت)</string>
+    <string name="sum_manualno">عدد المطالبات المانويل</string>
+    <string name="label_batch_no">رقم الباتش</string>
+    <string name="label_card_id">رقم الكارت</string>
+    <string name="label_claim_no">رقم الطالبة</string>
+    <string name="label_disc_code">كود الخصم</string>
+    <string name="label_group_name">الخصم</string>
+    <string name="label_med_code">كود الدواء</string>
+    <string name="med_name">اسم الدواء</string>
+    <string name="label_prv_branch_name">اسم فرع مقدم الخدمة</string>
+    <string name="prv_branch_num">كود فرع مقدم الخدمة</string>
+    <string name="label_prv_no">كود مقدم الخدمة</string>
+    <string name="label_difference_reason">سبب الخصم</string>
+    <string name="label_unit">عدد الوحدات</string>
+    <string name="label_prv_name">اسم مقدم الخدمة</string>
+    <string name="add_new_family_Member">أضافة فرد جديد</string>
+    <string name="pharmacy_name">أسم الصيدليه</string>
+    <string name="label_filter">فلتر</string>
+    <string name="action_filter">فلتر</string>
+    <string name="action_batch">خصومات مقدم الخدمه</string>
+    <string name="label_systemno">عدد المطالبات السيستم</string>
+    <string name="titel_notification_alert">تنبيه الاشعارات</string>
+    <string name="notification_alert">من فضلك أعطي سماحيه للتطبيق كتطبيق محمي من اعدادات الجهاز ليصلك التنبيهات بدون مشاكل</string>
+    <string name="action_protect_app">الاعدادات</string>
+    <string name="row_number">رقم</string>
+    <string name="callus">اتصل بنا نحن هنا للمساعده: 01205566050</string>
+    <string name="indemnity">مطالبات فردية</string>
+    <string name="custom_title">أختار الصور</string>
+    <string name="max_image">يجب عليك أختيار 8 صور علي الاكثر</string>
+    <string name="action_indmnity">مطالبات فردية</string>
+    <string name="intro_notification">من فضلك تاكد من اعدادات التطبيق من خلال جعل التطبيق كتطبيق محمي بحيث يصلك الاشعارات بدون مشاكل</string>
+    <string name="track_order">Track Order</string>
+    <string name="add_new_massenger">اضافه مندوب جديد</string>
+    <string name="own">Own</string>
+    <string name="licence">ترخيص</string>
+    <string name="back">Back</string>
+    <string name="searchforcompany">بحث عن الشركه</string>
+    <string name="order_date">تاريخ الطلب</string>
+    <string name="companyid">كود الشركه</string>
+    <string name="companyname">اسم الشركه</string>
+    <string name="companyphone1">هاتف الشركه1</string>
+    <string name="companyphone2">هاتف الشركه2</string>
+    <string name="add_new_order">اضافه طلب جديد</string>
+    <string name="members_title">الاعضاء</string>
+    <string name="hint_group_name">ادخل اسم الجروب</string>
+    <string name="companyaddress1">عنوان الشركه1</string>
+    <string name="companyaddress2">عنونا الشركه2</string>
+    <string name="action_Massenger">المندوب</string>
+    <string name="chat_title">الدردشه</string>
+    <string name="single">Single</string>
+    <string name="options_2">الخيارات</string>
+    <string name="label_type_normal_user">Normal</string>
+    <string name="label_type_hr_user">HR</string>
+    <string name="label_type_dms_user">DMS Member</string>
+    <string name="label_type_family_member">Family Member</string>
+    <string name="label_prevroise">السابق</string>
+    <string name="Resend_Code">اعاده ارسال كود التفعيل</string>
+    <string name="title_verfication">تفعيل رقم الهاتف</string>
+    <string name="action_resnd_cdoe">اعاده ارسال كود التفعيل</string>
+    <string name="err_verf_code">فشل في تفعيل الحساب,اعد </string>
+    <string name="action_verfiy">تفعيل الحساب</string>
+    <string name="hint_verification_code">ادخل كوج التفعيل</string>
+    <string name="action_login">تسجيل الدخول</string>
+    <string name="hint_password">كلمه السر</string>
+    <string name="hint_username">اسم المستخدم</string>
+    <string name="sucees_login">تم التسجيل بنجاح</string>
+    <string name="failed_login">اسم المستخدم او كلمه السر خاطئه</string>
+    <string name="title_accounts">الحسابات</string>
+    <string name="empty_account">لايوجد حساب</string>
+    <string name="action_search">Network</string>
+    <string name="select_deparemnt">اختر اسم القسم</string>
+    <string name="msg_select_department">اختر القسم</string>
+    <string name="sucess_create_account">تم انشاء السحاب بنجاح</string>
+    <string name="title_dashboard">لوحه التحكم</string>
+    <string name="msg_notifiction_sent">تم ارسال الرساله الي جميع المتسخدمين</string>
+    <string name="msg_failed_notifiction">فشل في ارسال الرساله</string>
+    <string name="msg_empty_user_list">من فضلك اختر مستخدم واحد علي الاقل</string>
+    <string name="label_user_account">حسابات المستخدمين</string>
+    <string name="label_send_notifictions">ارسال الاشعارات</string>
+    <string name="action_send_notif">ارسل اشعار</string>
+    <string name="hint_message">الرساله</string>
+    <string name="admin_title">الادمن</string>
+    <string name="active">فعال</string>
+    <string name="astrics">*************</string>
+    <string name="no_members">لايوجد اعضاء</string>
+    <string name="All">All</string>
+    <string name="Done">Done</string>
+    <string name="Pending">Pending</string>
+    <string name="Holding">Holding</string>
+    <string name="Approval">Approval</string>
+    <string name="runner_id">Runner Id:</string>
+    <string name="number">1441</string>
+    <string name="approval_date">Approval Date:</string>
+    <string name="confirm_order">Confirm Order</string>
+    <string name="runner_rate">Runner Rate:</string>
+    <string name="percentage">40%</string>
+    <string name="confirm_notes">Confirm Notes:</string>
+    <string name="messenger">Messenger</string>
+    <string name="order_id">Order Id:</string>
+    <string name="holde_date">Hold Date:</string>
+    <string name="order_reasons">Hold Date:</string>
+    <string name="move">Move</string>
+    <string name="order_type">Order Type:</string>
+    <string name="reasons">reasons</string>
+    <string name="download">Download</string>
+    <string name="move_order">Move Order</string>
+    <string name="hold">Hold</string>
+    <string name="step1_select_user_runner">*Step 1:Select User Runner</string>
+    <string name="step3">\"*Step 3:Any Notes</string>
+    <string name="optional">*Optional</string>
+    <string name="any_comment">Any Comment ...</string>
+    <string name="previous">PREVIOS</string>
+    <string name="runner_selected">Runner Selected :</string>
+    <string name="amr">amr</string>
+    <string name="order_time_selected">Order Time Selected :</string>
+    <string name="ERROR_OCCURED">ERROR OCCURED</string>
+    <string name="please_rate_our_messenger">Please Rate Our Massenger</string>
+    <string name="medical_name">medical Name</string>
+    <string name="CAPSULES">CAPSULES</string>
+    <string name="Unit">الوحدات</string>
+    <string name="size">الحجم</string>
+    <string name="days">الايام</string>
+    <string name="not_available_this_month">غير متاح هذا الشهر</string>
+    <string name="Title">العنوان</string>
+    <string name="car">سياره</string>
+    <string name="text_view">TextView</string>
+    <string name="Reply">الرد</string>
+    <string name="dash_slash">--/--/--</string>
+    <string name="name">الاسم</string>
+    <string name="VIP">شخصيه مميزه</string>
+    <string name="list_reasons">قائمه الاسباب</string>
+    <string name="add">اضافه</string>
+    <string name="Check_All">تحديد الكل</string>
+    <string name="un_check_all">الغاء تحديد الكل</string>
+    <string name="Inactive">غير فعالe</string>
+    <string name="msg_empty_list">القائمه فارغه</string>
+    <string name="Permission_Denied">Permission Denied</string>
+    <string name="Ok">OK</string>
+    <string name="password_changed_success">تم تغيير كلمه السر بنجاح</string>
+    <string name="permission_granted">Permission granted now you can read the storage and open camera</string>
+    <string name="msg_delete_account">هل تريد حذف الحساب؟</string>
+    <string name="msg_sucess_delete">تم حذف الحساب بنجاح</string>
+    <string name="msg_err_delete">فشل في حذف الحساب</string>
+    <string name="hint_search_account">اسم المستخدم,رقم الكارت,الهاتف,الايميل,النوع</string>
+    <string-array name="state_name">
+        <item>اختار ال</item>
+        <item>أسعار معدلة</item>
+        <item>خطاء نقل</item>
+        <item>خطاء جمع</item>
+        <item>فروق تحمل</item>
+        <item>أدوية غير مغطاة</item>
+        <item>خصم خطاء - دواء محلى ومحتسب مستورد</item>
+        <item>خصم خطاء - دواء مستورد ومحتسب محلى</item>
+        <item>إسم بدون إستمارة</item>
+        <item>أدوية مكتوبة بخط اليد</item>
+        <item>صرف بديل أرخص</item>
+        <item>تصفير دواء</item>
+        <item>تعديل وحده وسعر</item>
+        <item>فروق أسعار</item>
+        <item>خطأ تسعير</item>
+        <item>غير مغطاة</item>
+        <item>أدوية غير موصوفة</item>
+        <item>جرعات زائدة</item>
+        <item>بدون موافقة</item>
+        <item>صرف تركيز اعلي</item>
+        <item>صرف بديل اغلي</item>
+        <item>ادوية غير واضحة</item>
+        <item>موافقة</item>
+        <item>أخري</item>
+    </string-array>
+    <string-array name="state_code">
+
+        <item>-1</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>13</item>
+        <item>11</item>
+        <item>12</item>
+        <item>10</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>0</item>
+        <item>9</item>
+    </string-array>
+    <string-array name="check_status">
+        <item>Choose Check Status</item>
+        <item>CHECK_DON</item>
+        <item>OK</item>
+        <item>YES</item>
+        <item>STOP</item>
+    </string-array>
+
+    <string-array name="massengertype">
+        <item>Technical Support</item>
+        <item>Customer Service</item>
+
+    </string-array>
+    <string-array name="massengerown">
+        <item>Bike</item>
+        <item>Motorcycle</item>
+        <item>Car</item>
+    </string-array>
+
+    <string-array name="departement">
+
+        <item>Customer Service</item>
+        <item>Medical</item>
+        <item>Network</item>
+        <item>Indemnity</item>
+        <item>IT</item>
+        <item>Auditing</item>
+        <item>Financial</item>
+        <item>Claims</item>
+        <item>Pharmacies</item>
+        <item>Monthly medication</item>
+    </string-array>
+
+    <string-array name="service_type">
+        <item>اختر نوع الخدمة</item>
+        <item>خدمات علاج داخلي(بالمستشفيات)</item>
+        <item>خمات علاج خارجي(بالمستشفيات)</item>
+        <item>ادويه</item>
+        <item>تحاليل</item>
+        <item>اشعات</item>
+        <item>اسنان</item>
+        <item>بصريات</item>
+        <item>حمل وولاده</item>
+    </string-array>
+    <string name="Approve">الموافقه</string>
+    <string name="title_summray_contract">العقود</string>
+    <string name="search_by_comp_id">البحث ب كود الشركه</string>
+    <string name="comany_address">العنوان</string>
+    <string name="start_date">تاريخ بدايه العقد</string>
+    <string name="end_date">تاريخ نهائيه العقد</string>
+    <string name="class_code">كود الفئه</string>
+    <string name="ambluance">الاسعاف</string>
+    <string name="hospital_cost">تكلفه المستشفي</string>
+    <string name="max_amount">القيمه العظمي</string>
+    <string name="service_code">كود الخدمه</string>
+    <string name="sub_service_code">خدمه فرعيه</string>
+    <string name="err_select_contract_num">من فضلك اختر رقم العقد</string>
+    <string name="err_select_contract_type">من فضلك اختر نوع العقد</string>
+    <string name="err_select_contract_long">من فضلك اختر نوع نسخه العقد</string>
+    <string name="empty_contract">لا يوجد نوع هذا العقد</string>
+    <string name="hint_search_company">اكتب كود الشركه</string>
+    <string name="celling_amount">قيمه الحد الاعلي</string>
+    <string name="ceilling_perc">نسبه الحد الاعلي </string>
+    <string name="carry_amt">Cary Amount</string>
+    <string name="notes">Notes</string>
+    <string name="indlist_price">Indlist Price</string>
+    <string name="refund_flag">Refund Flag</string>
+    <string name="review_title">التقييمات</string>
+    <string name="sucess_updated_account">تم تحديث الحساب بنجاح</string>
+    <string name="hospital_degree">درجه المستشفي</string>
+    <string name="acc_degree">درجه الاقامه</string>
+    <string name="sucess_add_sales">تمت الاضافه بنجاح</string>
+    <string name="err_add_sales">فشل في الحفظ</string>
+    <string name="select_customer_type">اختر نوع العميل</string>
+    <string name="empty_textview">لا يوجد نتائج</string>
+    <string name="no_results">لايوجد نتائج</string>
+    <string name="no_results_subtitle">لايوجد نتئائج</string>
+    <string name="title_Area">اختر المنظقه</string>
+    <string name="search_area">البحث بكود المنطقه</string>
+    <string name="call_date">تاريخ ووقت المكالمه</string>
+    <string name="next_call_date">تاريخ ووقت المكالمه القادمه</string>
+    <string name="meeting_date">تاريخ ووقت الاجتماع</string>
+    <string name="time_pick">اختر الوقت</string>
+    <string name="from_date">من تاريخ</string>
+    <string name="to_date">الي تاريخ</string>
+    <string name="no_tele_sales">لا يوجد سجلات</string>
+    <string name="msg_select_area">من فضلك اختر منطقه</string>
+    <string name="label_finish">اكتمل</string>
+    <string name="msg_removed">محذوف</string>
+    <string name="msg_failed">فشل</string>
+    <string name="avialable">متاح</string>
+    <string name="label_cancel">ملغي</string>
+    <string name="select_employee">اختر رقم كارت الموظف</string>
+    <string name="msg_select_employee">اخت رقم كارت الموظف</string>
+    <string name="title_tele_sales">Tele Sales</string>
+    <string name="title_search_tele">Search Tele Sales</string>
+    <string name="add_tele_sales">Tele Sales</string>
+    <string name="reviews">التقييمات</string>
+    <string name="send_prescription">ارسل الطلب</string>
+    <string name="label_pharmcy">الصيدليه:</string>
+    <string name="label_select_pharmcy">Select a Pharmcy</string>
+    <string name="action_prescription">طلب توصيل الادويه</string>
+    <string name="prescription_sent">Pتم ارسال الطلب بنجاح</string>
+    <string name="err_select_provider">اختر مزود الخدمه</string>
+    <string name="action_orders">Medicine Order</string>
+    <string name="title_pharmcy_order">Pharmcy Orders</string>
+    <string name="empty_order">لا يوجد طلبات</string>
+    <string name="title_medicine_order">طلب علاج</string>
+    <string name="msg_sel_type">اختر نوع مزود الخدمه</string>
+    <string name="validate_card">فحص الكارت</string>
+    <string name="title_Card_validation">فحص الكارت</string>
+    <string name="msg_valid_card">البطاقه مقبوله</string>
+    <string name="msg_invalid_card">البطاقه مرفوضه</string>
+    <string name="msg_sms_sent">تم ارسال كود التفعيل الي الرقم الخاص بك</string>
+    <string name="label_not_sms_recived">لم تصلك الرساله القصيره?</string>
+    <string name="action_scan_card">فحص الكارت</string>
+    <string name="no_review">لايوجد تقييمات</string>
+    <string name="after_sales">After Sales</string>
+    <string name="after_sales_title">After Sales</string>
+    <string name="title_search_after_tele">After Sales</string>
+    <string name="sucess_update">تم التحديث بنجاح</string>
+    <string name="failed_update">فشل في التحديث</string>
+    <string name="sucess_add">تمت الاضافه بنجاح</string>
+    <string name="failed_add">فشل في الاضافه</string>
+    <string name="edit_account">تعديل الحساب</string>
+    <string name="hint_search_tele_sales">البحث ب الكود,اسم الشركه</string>
+    <string name="label_no_data">لايوجد بيانات</string>
+    <string name="label_retry">اعاده المحاوله</string>
+    <string name="action_finish">انهاء</string>
+    <string name="label_select_pharm_Spefic">اختر التخصص</string>
+    <string name="choose_language">اختر اللغه</string>
+    <string name="english">English</string>
+    <string name="arabic">العربيه</string>
+    <string name="card_valid_note">يتم سحب البطاقه والتواصل مع الشركه والاتصال علي الرقم 01117713399 او 01200112715</string>
+
+    <string-array name="dms_departement">
+        <item>Select a Department</item>
+        <item>Customer Service</item>
+        <item>Medical</item>
+        <item>Network</item>
+        <item>Indemnity</item>
+        <item>Operation</item>
+        <item>IT</item>
+        <item>Auditing</item>
+        <item>Financial</item>
+        <item>Claims</item>
+        <item>Pharmacies</item>
+        <item>Monthly medication</item>
+    </string-array>
+
+    <string-array name="user_type_list">
+        <item>ALL</item>
+        <item>USER</item>
+        <item>HR</item>
+        <item>PROVIDER</item>
+        <item>DMS MEMBER</item>
+    </string-array>
+    <string-array name="contract_long" >
+        <item>نوع نسخه العقد</item>
+        <item>نسخة كاملة</item>
+        <item>مختصرة</item>
+
+    </string-array>
+    <string-array name="contract_type" >
+    <item>نوع العقد</item>
+    <item>عقد</item>
+    <item>تظهير</item>
+    </string-array>
+</resources>

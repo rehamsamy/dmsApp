@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorAccentTrams">
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/vertical_guideline"
+        app:layout_constraintGuide_percent="0.05"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="21dp" />
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/vertical_guideline1"
+        app:layout_constraintGuide_percent="0.95"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="391dp" />
+
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/horizontal_guideline"
+        app:layout_constraintGuide_percent="0.2"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteY="132dp"
+        tools:layout_editor_absoluteX="0dp" />
+
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/vertical_guideline2"
+        app:layout_constraintGuide_percent="0.15"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="103dp" />
+
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/vertical_guideline3"
+        app:layout_constraintGuide_percent="0.85"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="309dp" />
+
+    <ImageView
+        android:contentDescription="@string/upload_image"
+
+        android:id="@+id/imagelogo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:src="@drawable/logo"
+        app:layout_constraintDimensionRatio="3.5:1"
+        app:layout_constraintLeft_toLeftOf="@+id/vertical_guideline2"
+        app:layout_constraintRight_toLeftOf="@+id/vertical_guideline3"
+        app:layout_constraintBottom_toBottomOf="@+id/horizontal_guideline"
+        />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tinputFullName"
+        android:textColorHint="@color/mdtp_white"
+        android:layout_marginTop="20dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="5.5:1"
+        app:layout_constraintLeft_toLeftOf="@+id/vertical_guideline"
+        app:layout_constraintRight_toLeftOf="@+id/vertical_guideline1"
+        app:layout_constraintTop_toBottomOf="@+id/imagelogo"
+        >
+
+        <EditText
+            android:id="@+id/etFullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/full_name"
+            android:textSize="@dimen/title_text_size"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            app:backgroundTint="@color/mdtp_white"
+            android:textColor="@color/mdtp_white"
+
+
+            android:nextFocusDown="@+id/etNationalID" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tinputNationalID"
+        android:textColorHint="@color/mdtp_white"
+
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp"
+        app:layout_constraintDimensionRatio="5.5:1"
+        app:layout_constraintLeft_toLeftOf="@+id/vertical_guideline"
+        app:layout_constraintRight_toLeftOf="@+id/vertical_guideline1"
+        app:layout_constraintTop_toBottomOf="@+id/tinputFullName"
+
+        >
+
+        <EditText
+            app:backgroundTint="@color/mdtp_white"
+            android:textColor="@color/mdtp_white"
+            android:id="@+id/etNationalID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/national_id"
+            android:inputType="number"
+            android:textSize="@dimen/title_text_size"
+
+            android:maxLength="14"
+            android:maxLines="1"
+            android:nextFocusDown="@+id/etSignupCardID" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tinputSignupCardID"
+        android:layout_width="0dp"
+        android:textColorHint="@color/mdtp_white"
+
+        android:layout_height="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp"
+        app:layout_constraintDimensionRatio="5.5:1"
+        app:layout_constraintLeft_toLeftOf="@+id/vertical_guideline"
+        app:layout_constraintRight_toLeftOf="@+id/vertical_guideline1"
+        app:layout_constraintTop_toBottomOf="@+id/tinputNationalID"
+        >
+
+        <EditText
+            android:id="@+id/etSignupCardID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/card_id"
+            android:inputType="textCapCharacters"
+            android:maxLength="20"
+            android:textSize="@dimen/title_text_size"
+
+            app:backgroundTint="@color/mdtp_white"
+            android:textColor="@color/mdtp_white"
+            android:maxLines="1"
+            android:nextFocusDown="@+id/etBirthDate" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tinputBirthDate"
+        android:layout_width="0dp"
+        android:textColorHint="@color/mdtp_white"
+
+        android:layout_height="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp"
+        app:layout_constraintDimensionRatio="5.5:1"
+        app:layout_constraintLeft_toLeftOf="@+id/vertical_guideline"
+        app:layout_constraintRight_toLeftOf="@+id/vertical_guideline1"
+        app:layout_constraintTop_toBottomOf="@+id/tinputSignupCardID"
+        >
+
+        <EditText
+            android:id="@+id/etBirthDate"
+            android:textSize="@dimen/title_text_size"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cursorVisible="false"
+            android:hint="@string/prompt_birth_date"
+            android:inputType="date"
+            android:maxLength="10"
+            app:backgroundTint="@color/mdtp_white"
+            android:textColor="@color/mdtp_white"
+            android:maxLines="1"
+            android:nextFocusDown="@+id/etConfirmMobileNumber" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tinputMobileNumber"
+        android:layout_width="0dp"
+        android:textColorHint="@color/mdtp_white"
+
+        android:layout_height="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp"
+        app:layout_constraintDimensionRatio="5.5:1"
+        app:layout_constraintLeft_toLeftOf="@+id/vertical_guideline"
+        app:layout_constraintRight_toLeftOf="@+id/vertical_guideline1"
+        app:layout_constraintTop_toBottomOf="@+id/tinputBirthDate"
+        >
+
+        <EditText
+            android:id="@+id/etMobileNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/mobile_number"
+            android:inputType="phone"
+            android:textSize="@dimen/title_text_size"
+
+            app:backgroundTint="@color/mdtp_white"
+            android:textColor="@color/mdtp_white"
+            android:maxLength="11"
+            android:maxLines="1"
+            android:nextFocusDown="@+id/etConfirmMobileNumber" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tinputConfirmMobileNumber"
+        android:layout_width="0dp"
+        android:textColorHint="@color/mdtp_white"
+
+        android:layout_height="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp"
+        app:layout_constraintDimensionRatio="5.5:1"
+        app:layout_constraintLeft_toLeftOf="@+id/vertical_guideline"
+        app:layout_constraintRight_toLeftOf="@+id/vertical_guideline1"
+        app:layout_constraintTop_toBottomOf="@+id/tinputMobileNumber"
+        >
+
+        <EditText
+
+            android:id="@+id/etConfirmMobileNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/mobile_number_confirm"
+            android:inputType="phone"
+            android:textSize="@dimen/title_text_size"
+
+            android:maxLength="11"
+            app:backgroundTint="@color/mdtp_white"
+            android:textColor="@color/mdtp_white"
+            android:maxLines="1"
+            android:nextFocusDown="@+id/etSignupEmail" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tinputSignupEmail"
+        android:layout_width="0dp"
+        android:textColorHint="@color/mdtp_white"
+        android:layout_height="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp"
+        app:layout_constraintDimensionRatio="5.5:1"
+        app:layout_constraintLeft_toLeftOf="@+id/vertical_guideline"
+        app:layout_constraintRight_toLeftOf="@+id/vertical_guideline1"
+        app:layout_constraintTop_toBottomOf="@+id/tinputConfirmMobileNumber"
+        >
+
+        <AutoCompleteTextView
+            android:id="@+id/etSignupEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/prompt_email"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:textSize="@dimen/title_text_size"
+
+            android:nextFocusDown="@+id/etSignupPassword"
+            app:backgroundTint="@color/mdtp_white"
+            android:textColor="@color/mdtp_white"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tinputSignupUsername"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textColorHint="@color/mdtp_white"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp"
+        app:layout_constraintDimensionRatio="5.5:1"
+        app:layout_constraintLeft_toLeftOf="@+id/vertical_guideline"
+        app:layout_constraintRight_toLeftOf="@+id/vertical_guideline1"
+        app:layout_constraintTop_toBottomOf="@+id/tinputSignupEmail"
+        >
+
+        <EditText
+            android:id="@+id/etSignupUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/username"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:textSize="@dimen/title_text_size"
+
+            android:nextFocusDown="@+id/etSignupPassword"
+            android:textColor="@color/mdtp_white"
+            app:backgroundTint="@color/mdtp_white" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tinputSignupPassword"
+        android:layout_width="0dp"
+        android:textColorHint="@color/mdtp_white"
+
+        android:layout_height="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp"
+        app:layout_constraintDimensionRatio="5.5:1"
+        app:layout_constraintLeft_toLeftOf="@+id/vertical_guideline"
+        app:layout_constraintRight_toLeftOf="@+id/vertical_guideline1"
+        app:layout_constraintTop_toBottomOf="@+id/tinputSignupUsername"
+        >
+
+        <EditText
+            android:id="@+id/etSignupPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/prompt_password"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:textSize="@dimen/title_text_size"
+
+            app:backgroundTint="@color/mdtp_white"
+            android:textColor="@color/mdtp_white"
+            android:maxLines="1"
+            android:nextFocusDown="@+id/etConfirmPassword" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tinputConfirmPassword"
+        android:layout_width="0dp"
+        android:textColorHint="@color/mdtp_white"
+        android:layout_height="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp"
+        app:layout_constraintDimensionRatio="5.5:1"
+        app:layout_constraintLeft_toLeftOf="@+id/vertical_guideline"
+        app:layout_constraintRight_toLeftOf="@+id/vertical_guideline1"
+        app:layout_constraintTop_toBottomOf="@+id/tinputSignupPassword"
+        >
+
+        <EditText
+            android:id="@+id/etConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/prompt_password_confirm"
+            android:imeActionId="@integer/registerImeActionID"
+            android:textSize="@dimen/title_text_size"
+
+            app:backgroundTint="@color/mdtp_white"
+            android:textColor="@color/mdtp_white"
+            android:imeActionLabel="@string/action_sign_up"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:maxLines="1" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_marginTop="20dp"
+
+        android:textColor="@color/colormain"
+        android:id="@+id/btnSignup"
+        style="?android:textAppearanceSmall"
+        android:textAllCaps="false"
+        android:textSize="@dimen/title_text_size"
+
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/roundedtop"
+        android:text="@string/action_sign_up"
+        android:textStyle="bold"
+        app:layout_constraintDimensionRatio="5.3:1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/vertical_guideline2"
+        app:layout_constraintRight_toLeftOf="@+id/vertical_guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/tinputConfirmPassword"
+        />
+</android.support.constraint.ConstraintLayout>

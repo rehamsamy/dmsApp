@@ -1,0 +1,11 @@
+    Hosting Account ID: 	mahmoud3sampa-001
+      First Website Root Folder Name: 	site1
+      First Website Type: 	ASP.NET
+      Hosting Plan Name: 	W60-US
+       	
+       	Please Record The Following FTP Infomation:
+      FTP Address : 	FTP.SITE4NOW.NET
+      FTP Username : 	mahmoud3sampa-001
+      FTP Password : 	(same as your control panel password)
+      FTP Directory 	\
+       	

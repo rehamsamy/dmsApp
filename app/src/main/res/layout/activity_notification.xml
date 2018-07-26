@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/main_bg">
+
+
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/activity_notification_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.dmsegypt.dms.ux.custom_view.nestedScrollView.NestedScrollAppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:theme="@style/ToolbarTheme">
+          <include layout="@layout/header_toolbar"/>
+        </com.dmsegypt.dms.ux.custom_view.nestedScrollView.NestedScrollAppBarLayout>
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/activity_notification_recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:paddingTop="@dimen/little_margin"
+                android:layoutAnimation="@anim/layout_anim"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+     <!-- <include layout="@layout/layout_empty_err_connection"/>-->
+  <com.dmsegypt.dms.ux.custom_view.StateView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:id="@+id/state_view"
+      />
+
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</LinearLayout>

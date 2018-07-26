@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/mr_dialog_close_light"
+        android:layout_margin="8dp"
+        android:id="@+id/imgv_close"/>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+
+
+
+        <EditText
+            android:gravity="center"
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/first_name"
+            android:padding="@dimen/small_padding"
+            android:textSize="25dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:padding="@dimen/small_padding"
+            android:layout_below="@id/name"
+            android:id="@+id/usernameContainer">
+
+            <ImageView
+                android:id="@+id/nameIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/user_type"
+                android:paddingLeft="@dimen/margin_small"
+                />
+
+            <EditText
+                android:id="@+id/UsernameEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/username"
+                android:textSize="18dp"
+                android:paddingLeft="@dimen/small_padding"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:padding="@dimen/small_padding"
+            android:layout_below="@id/usernameContainer"
+            android:id="@+id/cardIdContainer">
+
+            <ImageView
+                android:id="@+id/cardIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/card_id"
+                android:paddingLeft="@dimen/margin_small"
+                />
+
+            <EditText
+                android:id="@+id/cardId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/card_id"
+                android:textSize="18dp"
+                android:paddingLeft="@dimen/small_padding"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:padding="@dimen/small_padding"
+
+            android:layout_below="@id/cardIdContainer"
+            android:id="@+id/emailContainer">
+
+            <ImageView
+                android:id="@+id/emailIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/email"
+                android:paddingLeft="@dimen/margin_small"
+                />
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/info_email"
+                android:textSize="18dp"
+                android:paddingLeft="@dimen/small_padding"
+
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:layout_below="@id/emailContainer"
+            android:id="@+id/phoneContainer"
+            android:padding="@dimen/small_padding"
+            >
+
+            <ImageView
+                android:id="@+id/phoneIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/phone"
+                android:paddingLeft="@dimen/margin_small"
+                />
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/contact_phone"
+                android:textSize="18dp"
+                android:paddingLeft="@dimen/small_padding"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/phoneContainer"
+            android:id="@+id/passwordContainer"
+            android:padding="@dimen/small_padding"
+            >
+
+            <ImageView
+                android:id="@+id/passwordIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/password"
+                android:paddingLeft="@dimen/margin_small"
+                android:layout_gravity="center"
+                />
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:hint="@string/astrics"
+                android:layout_gravity="center"
+                android:textSize="18dp"
+                android:paddingLeft="@dimen/small_padding"
+
+                />
+
+            <ImageButton
+                android:id="@+id/showPasswordBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/margin_medium"
+                android:background="@drawable/eye"
+                android:paddingLeft="@dimen/margin_small"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:layout_below="@id/passwordContainer"
+            android:id="@+id/l_birthdate"
+            android:padding="@dimen/small_padding"
+
+            >
+
+            <ImageView
+                android:id="@+id/birthdateicon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_date_24dp"
+                android:paddingLeft="@dimen/margin_small"
+                />
+            <EditText
+                android:id="@+id/birthdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/birthdate_pick"
+                android:textSize="18dp"
+                android:paddingLeft="@dimen/small_padding"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:layout_below="@id/l_birthdate"
+            android:id="@+id/l_type"
+            android:padding="@dimen/small_padding"
+
+            >
+
+            <ImageView
+                android:id="@+id/typeicon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/user_type"
+                android:paddingLeft="@dimen/margin_small"
+                />
+            <com.jaredrummler.materialspinner.MaterialSpinner
+                android:id="@+id/typespinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="100"
+                android:text="@string/type"
+                app:ms_dropdown_height="wrap_content"
+                android:nextFocusDown="@+id/spinnermassengerown"
+                app:ms_background_color="@color/mdtp_white"
+                app:ms_dropdown_max_height="@dimen/max_dropdown_height"
+                android:textSize="@dimen/title_text_size"/>
+
+        </LinearLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tinputCompanyId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/l_type"
+            android:visibility="gone"
+            >
+
+            <EditText
+                android:id="@+id/etCompanyId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/companyid"
+                android:imeActionId="@integer/registerImeActionID"
+                android:textSize="@dimen/title_text_size"
+                android:imeActionLabel="@string/action_sign_up"
+                android:imeOptions="actionDone"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:drawableStart="@drawable/ic_company_36dp"/>
+
+        </android.support.design.widget.TextInputLayout>
+        <com.jaredrummler.materialspinner.MaterialSpinner
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/departmentSpinner"
+            android:text="@string/select_deparemnt"
+            android:layout_below="@id/tinputCompanyId"
+            android:visibility="gone"
+            />
+
+        <com.dmsegypt.dms.ux.custom_view.ProgressableSpinner
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/providerTypeSpinner"
+            android:text="Select Provider Type"
+            android:layout_below="@+id/departmentSpinner"
+            android:visibility="gone"/>
+
+
+        <com.dmsegypt.dms.ux.custom_view.ProgressableSpinner
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/pharmacySpinner"
+            android:text="Select Pharmacy"
+            android:layout_below="@+id/providerTypeSpinner"
+            android:visibility="gone"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/little_padding"
+            android:id="@+id/ib_edit"
+            android:layout_below="@id/pharmacySpinner"
+            android:background="@drawable/bg_button"
+            android:text="@string/action_edit"
+            />
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progress"
+            android:layout_below="@+id/ib_edit"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+            />
+
+
+    </RelativeLayout>
+
+</ScrollView>
+</LinearLayout>

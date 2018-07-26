@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/small_padding">
+    <include layout="@layout/header_toolbar"/>
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/prescription_upload"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_prescription"
+        android:layout_margin="@dimen/margin_medium"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_pharmcy"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/normal_margin"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:id="@+id/pharm_radio"
+        >
+        <RadioButton
+            android:id="@+id/all_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_all"
+            android:layout_marginEnd="@dimen/normal_margin"/>
+        <RadioButton
+            android:id="@+id/single_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/single"
+            android:checked="true"/>
+    </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/container">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <com.dmsegypt.dms.ux.custom_view.ProgressableSpinner
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="4dp"
+            android:text="@string/city"
+            android:id="@+id/city_spinner"/>
+
+        <com.dmsegypt.dms.ux.custom_view.ProgressableSpinner
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="@string/area"
+            android:id="@+id/area_spinner"/>
+    </LinearLayout>
+        <com.dmsegypt.dms.ux.custom_view.ProgressableSpinner
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/label_select_pharmcy"
+        android:layout_marginBottom="@dimen/normal_margin"
+        android:id="@+id/pharm_spinner"/>
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/notesEdit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:layout_weight="2"
+        android:textSize="@dimen/title_text_size"
+        android:padding="@dimen/mini_padding"
+        android:background="@drawable/rect_view"
+        android:textColor="@color/colormain"
+        android:textColorHint="@color/colormain"
+        android:hint="@string/notes_hint"
+        android:inputType="textMultiLine"
+        android:imeOptions="actionNext"
+        android:minLines="5"
+        android:maxLines="5"
+        android:layout_marginBottom="@dimen/margin_medium"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_button"
+        android:text="@string/send_prescription"
+        android:layout_gravity="center"
+        android:padding="8dp"
+        android:textColor="@color/colormain"
+        android:id="@+id/btnSend"
+        android:layout_margin="@dimen/margin_medium"
+        />
+
+
+</LinearLayout>

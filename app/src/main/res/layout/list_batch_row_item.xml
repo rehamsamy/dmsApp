@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="50dp"
+
+    >
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="horizontal">
+           <TextView
+               android:id="@+id/row_no_tv"
+               android:layout_width="40dp"
+               android:layout_height="40dp"
+               android:text="@string/number"
+               android:textColor="@color/colorAccentRed"
+               android:textStyle="bold"
+               style="@style/summary_text"
+               />
+           <View
+               android:layout_width="1dp"
+               android:layout_height="match_parent"
+               android:background="@color/color_white"/>
+
+           <LinearLayout
+               android:layout_height="40dp"
+               android:layout_width="120dp"
+               android:orientation="horizontal"
+               >
+               <TextView
+                   android:id="@+id/Batch_no_tv"
+                   android:layout_height="wrap_content"
+                   android:layout_width="wrap_content"
+                   android:text=""
+                   style="@style/summary_text"
+                   />
+           </LinearLayout>
+           <View
+               android:layout_width="1dp"
+               android:layout_height="match_parent"
+               android:background="@color/color_white"/>
+
+           <LinearLayout
+               android:layout_height="40dp"
+               android:layout_width="100dp"
+               android:orientation="vertical"
+               >
+
+               <TextView
+                   android:id="@+id/Card_id_tv"
+                   android:layout_height="wrap_content"
+                   android:layout_width="wrap_content"
+                   android:text=""
+                   style="@style/summary_text"
+                   />
+
+
+           </LinearLayout>
+           <View
+               android:layout_width="1dp"
+               android:layout_height="match_parent"
+               android:background="@color/color_white"/>
+
+
+
+           <LinearLayout
+               android:layout_height="40dp"
+               android:layout_width="120dp"
+               android:orientation="vertical"
+               >
+
+               <TextView
+                   android:id="@+id/Claim_no"
+                   android:layout_height="wrap_content"
+                   android:layout_width="wrap_content"
+                   android:text=""
+                   style="@style/summary_text"
+                   />
+
+
+           </LinearLayout>
+           <View
+               android:layout_width="1dp"
+               android:layout_height="match_parent"
+               android:background="@color/color_white"/>
+           <LinearLayout
+               android:layout_height="40dp"
+               android:layout_width="120dp"
+               android:orientation="vertical"
+               >
+
+               <TextView
+                   android:id="@+id/Disc_code"
+                   android:layout_height="wrap_content"
+                   android:layout_width="wrap_content"
+                   android:text=""
+                   style="@style/summary_text"
+                   />
+
+
+           </LinearLayout>
+           <View
+               android:layout_width="1dp"
+               android:layout_height="match_parent"
+               android:background="@color/color_white"/>
+
+           <LinearLayout
+               android:layout_height="40dp"
+               android:layout_width="150dp"
+               android:orientation="vertical"
+               >
+
+               <TextView
+                   android:id="@+id/Difference_amt"
+                   android:layout_height="wrap_content"
+                   android:layout_width="wrap_content"
+                   android:text=""
+                   style="@style/summary_text"
+                   />
+
+
+           </LinearLayout>
+
+
+           <View
+               android:layout_width="1dp"
+               android:layout_height="match_parent"
+               android:background="@color/color_white"/>
+
+           <LinearLayout
+               android:layout_height="40dp"
+               android:layout_width="120dp"
+               android:orientation="vertical"
+               >
+
+               <TextView
+                   android:id="@+id/Group_name"
+                   android:layout_height="wrap_content"
+                   android:layout_width="wrap_content"
+                   android:text=""
+                   style="@style/summary_text"
+                   />
+
+
+           </LinearLayout>
+           <View
+               android:layout_width="1dp"
+               android:layout_height="match_parent"
+               android:background="@color/color_white"/>
+
+           <LinearLayout
+               android:layout_height="40dp"
+               android:layout_width="120dp"
+               android:orientation="vertical"
+               >
+               <TextView
+                   android:id="@+id/Med_code"
+                   android:layout_height="wrap_content"
+                   android:layout_width="wrap_content"
+                   android:text=""
+                   style="@style/summary_text"
+                   />
+
+
+           </LinearLayout>
+           <View
+               android:layout_width="1dp"
+               android:layout_height="match_parent"
+               android:background="@color/color_white"/>
+
+           <LinearLayout
+               android:layout_height="40dp"
+               android:layout_width="120dp"
+               android:orientation="vertical"
+               >
+
+               <TextView
+                   android:id="@+id/Med_name"
+                   android:layout_height="wrap_content"
+                   android:layout_width="wrap_content"
+                   android:text=""
+                   style="@style/summary_text"
+                   />
+
+
+           </LinearLayout>
+           <View
+               android:layout_width="1dp"
+               android:layout_height="match_parent"
+               android:background="@color/color_white"/>
+           <LinearLayout
+               android:layout_height="40dp"
+               android:layout_width="150dp"
+               android:orientation="vertical"
+               >
+
+               <TextView
+                   android:id="@+id/Prv_branch_name"
+                   android:layout_height="wrap_content"
+                   android:layout_width="wrap_content"
+                   android:text=""
+                   style="@style/summary_text"
+                   />
+
+
+           </LinearLayout>
+           <View
+               android:layout_width="1dp"
+               android:layout_height="match_parent"
+               android:background="@color/color_white"/>
+
+
+
+           <LinearLayout
+               android:layout_height="40dp"
+               android:layout_width="150dp"
+               android:orientation="vertical"
+               >
+
+               <TextView
+                   android:id="@+id/Prv_branch_num"
+                   android:layout_height="wrap_content"
+                   android:layout_width="wrap_content"
+                   android:text=""
+                   style="@style/summary_text"
+                   />
+
+
+           </LinearLayout>
+           <View
+               android:layout_width="1dp"
+               android:layout_height="match_parent"
+               android:background="@color/color_white"/>
+
+
+           <LinearLayout
+               android:layout_height="40dp"
+               android:layout_width="120dp"
+               android:orientation="vertical"
+               >
+
+               <TextView
+                   android:id="@+id/Prv_no"
+                   android:layout_height="wrap_content"
+                   android:layout_width="wrap_content"
+                   android:text=""
+                   style="@style/summary_text"
+                   />
+
+
+           </LinearLayout>
+           <View
+               android:layout_width="1dp"
+               android:layout_height="match_parent"
+               android:background="@color/color_white"/>
+
+
+           <LinearLayout
+               android:layout_height="40dp"
+               android:layout_width="120dp"
+               android:orientation="vertical"
+               >
+
+               <TextView
+                   android:id="@+id/System_amt"
+                   android:layout_height="wrap_content"
+                   android:layout_width="wrap_content"
+                   android:text=""
+                   style="@style/summary_text"
+                   />
+
+
+           </LinearLayout>
+           <View
+               android:layout_width="1dp"
+               android:layout_height="match_parent"
+               android:background="@color/color_white"/>
+
+           <LinearLayout
+               android:layout_height="40dp"
+               android:layout_width="120dp"
+               android:orientation="vertical"
+               >
+
+               <TextView
+                   android:id="@+id/Unit"
+                   android:layout_height="wrap_content"
+                   android:layout_width="wrap_content"
+                   android:text=""
+                   style="@style/summary_text"
+                   />
+
+
+           </LinearLayout>
+           <View
+               android:layout_width="1dp"
+               android:layout_height="match_parent"
+               android:background="@color/color_white"/>
+           <LinearLayout
+               android:layout_height="40dp"
+               android:layout_width="120dp"
+               android:orientation="vertical"
+               >
+
+               <TextView
+                   android:id="@+id/Prv_name"
+                   android:layout_height="wrap_content"
+                   android:layout_width="wrap_content"
+                   android:text=""
+                   style="@style/summary_text"
+                   />
+
+
+           </LinearLayout>
+           <View
+               android:layout_width="1dp"
+               android:layout_height="match_parent"
+               android:background="@color/color_white"/>
+
+
+       </LinearLayout>
+
+   </LinearLayout>

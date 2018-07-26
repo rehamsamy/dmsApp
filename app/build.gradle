@@ -1,0 +1,143 @@
+apply plugin: 'com.android.application'
+// 3 apply fabric plugin after android plugin
+apply plugin: 'io.fabric'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.3"
+    defaultConfig {
+        applicationId "com.dmsegypt.dms"
+        minSdkVersion 18
+        targetSdkVersion 25
+        versionCode 38
+        versionName "1.7.4"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+        vectorDrawables.useSupportLibrary=true
+
+    }
+    configurations.all {
+        resolutionStrategy.force 'com.google.code.findbugs:jsr305:1.3.9'
+    }
+    lintOptions {
+        disable 'RestrictedApi'
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            shrinkResources false
+
+        }
+    }
+
+    signingConfigs {
+        release {
+            storeFile file("DMSKeyStore.jks")
+            storePassword "DMS@12345"
+            keyAlias "DMS_Alias"
+            keyPassword "DMS@12345"
+            v2SigningEnabled false
+        }
+    }
+
+
+    allprojects {
+        repositories {
+            maven { url "https://jitpack.io" }
+            mavenCentral()
+
+            // 4 add crashlytics sdk repo
+            maven { url 'https://maven.fabric.io/public' }
+        }
+    }
+
+    useLibrary 'org.apache.http.legacy'
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    //region Android Support Libraries
+    //endregion
+    //region Rest interactions
+    //endregion
+    //region Image Downloading and Caching
+    //endregion
+    //region Binding views
+    //endregion
+    //region Dialogs
+    //endregion
+    //region Material spinner
+    //endregion
+    //region RecyclerView
+    //endregion
+    //region Leak Checks and Test Cases
+    //endregion
+    // 5 add crashlytics dependency
+    compile('com.crashlytics.sdk.android:crashlytics:2.6.7@aar') {
+        transitive = true
+    }
+
+    //step 2
+
+    //updateeed
+    //   compile 'jp.wasabeef:glide-transformations:3.0.1'
+    compile 'com.github.clans:fab:1.6.4'
+    compile 'com.github.amlcurran.showcaseview:library:5.4.3'
+    compile 'com.github.deano2390:MaterialShowcaseView:1.2.0@aar'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.support:mediarouter-v7:25.3.1'
+    compile 'com.android.support:support-v4:25.3.1'
+    compile 'com.android.support:cardview-v7:25.3.1'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.android.support:percent:25.3.1'
+    compile 'com.android.support:recyclerview-v7:25.3.1'
+    compile 'com.google.firebase:firebase-messaging:11.0.4'
+    compile 'com.google.firebase:firebase-database:11.0.4'
+    compile 'com.google.firebase:firebase-storage:11.0.4'
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.6.0'
+    compile 'com.squareup.okhttp3:okhttp:3.6.0'
+    compile 'com.google.code.gson:gson:2.8.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.jakewharton:butterknife:8.5.1'
+    compile 'com.afollestad.material-dialogs:core:0.9.4.4'
+    compile 'com.jaredrummler:material-spinner:1.1.0'
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.13'
+    compile 'com.wdullaer:materialdatetimepicker:3.2.0'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.github.johnpersano:supertoasts:2.0'
+    compile 'com.makeramen:roundedimageview:2.3.0'
+    compile 'com.zoonref:simple-view-behavior:1.0'
+    compile 'it.sephiroth.android.library.bottomnavigation:bottom-navigation:2.0.1-rc1'
+    compile 'me.grantland:autofittextview:0.2.1'
+    compile 'com.android.support:palette-v7:25.3.1'
+    compile 'com.google.android.gms:play-services-places:11.0.4'
+    compile 'com.github.IntruderShanky:Frisson:2.1.1'
+    compile 'uk.co.chrisjenx:calligraphy:2.3.0'
+    compile 'com.github.apl-devs:appintro:v4.2.2'
+    compile 'com.github.bumptech.glide:glide:3.8.0'
+    compile 'com.github.ParkSangGwon:TedPicker:v1.0.10'
+    testCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
+    testCompile 'junit:junit:4.12'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5'
+    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
+    compile 'com.google.firebase:firebase-auth:11.0.4'
+    compile 'com.google.apis:google-api-services-androidpublisher:v2-rev38-1.22.0'
+
+    compile group: 'com.google.oauth-client', name: 'google-oauth-client-jetty', version: '1.22.0'
+
+
+
+
+
+
+
+}
+apply plugin: 'com.google.gms.google-services'

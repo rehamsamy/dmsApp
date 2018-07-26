@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <ImageButton
+        android:id="@+id/iBtnCloseBtn"
+        style="@style/material_toolbar_image_button"
+        android:src="@mipmap/ic_close_light"
+        tools:ignore="ContentDescription"
+        />
+    <TableLayout
+        android:paddingTop="25dp"
+        android:id="@+id/reply_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/iBtnCloseBtn"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
+        >
+        <TextView
+            android:id="@+id/minimize_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/title_text_size"
+            android:text="@string/action_send_reply"
+            android:textColor="@color/colormain"
+            android:gravity="center"
+            android:paddingBottom="@dimen/little_padding"
+            android:textStyle="bold"
+            />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/mini_margin"
+            android:weightSum="2"
+
+            >
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/accept"
+                    android:textSize="@dimen/subtitle_text_size"
+                    android:textColor="@color/colormain"
+                    android:id="@+id/accept_radio"
+                    android:checked="true"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/refuse"
+                    android:textSize="@dimen/subtitle_text_size"
+                    android:textColor="@color/colormain"
+                    android:id="@+id/refuse_radio"/>
+            </RadioGroup>
+        </TableRow>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <EditText
+                    android:id="@+id/editText_note"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:background="@drawable/rect_view"
+                    android:textColorHint="@color/colormain"
+                    android:hint="@string/notes_hint"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:inputType="textMultiLine"
+                    android:minLines="5"
+                    android:scrollbars="vertical"
+                    android:textSize="@dimen/subtitle_text_size"
+
+                    />
+                <FrameLayout android:id="@+id/relativeLayout1"
+                    android:layout_below="@+id/editText_note"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/big_margin"
+                    android:background="@android:color/white"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    xmlns:android="http://schemas.android.com/apk/res/android">
+                    <ImageView
+                        android:contentDescription="@string/upload_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:id="@+id/img_imgview"
+                        android:scaleType="fitXY"/>
+                    <Button
+                        android:id="@+id/button_close"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_alignRight="@+id/relativeLayout1"
+                        android:layout_alignTop="@+id/relativeLayout1"
+
+                        android:background="@mipmap/ic_close_light"
+                        android:layout_gravity="right|end"/>
+                </FrameLayout>
+            </RelativeLayout>
+            <View
+
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorLine_light"
+                android:layout_marginTop="@dimen/mini_margin"
+                android:layout_marginBottom="@dimen/mini_margin"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="100"
+                >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="left|center_vertical"
+                android:layout_weight="95"
+                >
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_menu_camera"
+                android:layout_gravity="start|center_vertical"
+                android:id="@+id/btn_select"
+                android:scaleType="fitXY"
+                android:gravity="left"
+
+                />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="5"
+                android:layout_gravity="center"
+
+                >
+                <TextView
+                    android:id="@+id/send_Replay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical"
+                    android:background="@drawable/roundedtop"
+                    android:contentDescription="@string/type"
+                    android:padding="@dimen/mini_padding"
+                    android:textSize="@dimen/subtitle_text_size"
+                    android:textColor="@color/colormain"
+                    android:gravity="right"
+                    android:text="@string/action_send_reply" />
+            </LinearLayout>
+        </LinearLayout>
+        </LinearLayout>
+    </TableLayout>
+</RelativeLayout>

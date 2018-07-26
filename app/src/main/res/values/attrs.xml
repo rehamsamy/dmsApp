@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Declare custom theme attributes that allow changing which styles are
+         used for button bars depending on the API level.
+         ?android:attr/buttonBarStyle is new_image as of API 11 so this is
+         necessary to support previous API levels. -->
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference" />
+        <attr name="metaButtonBarButtonStyle" format="reference" />
+    </declare-styleable>
+
+    <!-- style -->
+    <declare-styleable name="root_color">
+        <attr name="root_color" format="reference|color" />
+    </declare-styleable>
+
+    <declare-styleable name="line_color">
+        <attr name="line_color" format="reference|color" />
+    </declare-styleable>
+
+    <declare-styleable name="title_color">
+        <attr name="title_color" format="reference|color" />
+    </declare-styleable>
+
+    <declare-styleable name="subtitle_color">
+        <attr name="subtitle_color" format="reference|color" />
+    </declare-styleable>
+
+    <declare-styleable name="content_color">
+        <attr name="content_color" format="reference|color" />
+    </declare-styleable>
+
+    <!-- circleImageView -->
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+
+    <!-- FreedomImageView -->
+    <declare-styleable name="FreedomImageView">
+        <attr name="fiv_cover_mode" format="boolean" />
+        <attr name="fiv_shadow_position">
+            <enum name="top" value="1" />
+            <enum name="bottom" value="-1" />
+            <enum name="both" value="2" />
+            <enum name="none" value="0" />
+        </attr>
+        <attr name="fiv_square" format="boolean" />
+    </declare-styleable>
+
+    <!-- SwipeBackCoordinatorLayout -->
+    <declare-styleable name="SwipeBackCoordinatorLayout">
+        <attr name="sbl_force_back" format="boolean" />
+    </declare-styleable>
+
+    <!-- RippleButton -->
+    <declare-styleable name="RippleButton">
+        <attr name="rb_title_on" format="string" />
+        <attr name="rb_title_off" format="string" />
+    </declare-styleable>
+
+</resources>

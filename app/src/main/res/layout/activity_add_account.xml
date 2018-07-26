@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/mr_dialog_close_light"
+        android:layout_margin="8dp"
+        android:id="@+id/imgv_close"/>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_below="@+id/imgv_close">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/margin_medium">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tinputFullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <EditText
+                android:id="@+id/etFullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/full_name"
+                android:textSize="@dimen/title_text_size"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:nextFocusDown="@+id/etNationalID"
+                android:drawableStart="@drawable/ic_person_36dp"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tinputNationalID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <EditText
+                android:id="@+id/etNationalID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/national_id"
+                android:inputType="number"
+                android:textSize="@dimen/title_text_size"
+                android:maxLength="14"
+                android:maxLines="1"
+                android:drawableStart="@drawable/ic_cardid_36dp"
+                android:nextFocusDown="@+id/etSignupCardID"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tinputSignupCardID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <EditText
+                android:id="@+id/etSignupCardID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/card_id"
+                android:inputType="textCapCharacters"
+                android:maxLength="20"
+                android:textSize="@dimen/title_text_size"
+                android:maxLines="1"
+                android:nextFocusDown="@+id/etBirthDate"
+                android:drawableStart="@drawable/ic_cardid_36dp"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tinputBirthDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <EditText
+                android:id="@+id/etBirthDate"
+                android:textSize="@dimen/title_text_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cursorVisible="false"
+                android:hint="@string/prompt_birth_date"
+                android:inputType="date"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:nextFocusDown="@+id/etConfirmMobileNumber"
+                android:drawableStart="@drawable/ic_date_36dp"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tinputMobileNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etMobileNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/mobile_number"
+                android:inputType="phone"
+                android:textSize="@dimen/title_text_size"
+                android:maxLength="11"
+                android:maxLines="1"
+                android:nextFocusDown="@+id/etConfirmMobileNumber"
+                android:drawableStart="@drawable/ic_phone_android_main_36dp"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tinputConfirmMobileNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <EditText
+
+                android:id="@+id/etConfirmMobileNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/mobile_number_confirm"
+                android:inputType="phone"
+                android:textSize="@dimen/title_text_size"
+                android:drawableStart="@drawable/ic_phone_android_main_36dp"
+                android:maxLength="11"
+                android:maxLines="1"
+                android:nextFocusDown="@+id/etSignupEmail" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tinputSignupEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <AutoCompleteTextView
+                android:id="@+id/etSignupEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_email"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:textSize="@dimen/title_text_size"
+                android:drawableStart="@drawable/ic_email_36dp"
+                android:nextFocusDown="@+id/etSignupPassword"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tinputSignupUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <EditText
+                android:id="@+id/etSignupUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/username"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:textSize="@dimen/title_text_size"
+                android:drawableStart="@drawable/ic_person_36dp"
+                android:nextFocusDown="@+id/etSignupPassword" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tinputSignupPassword"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            >
+
+            <EditText
+                android:id="@+id/etSignupPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_password"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:textSize="@dimen/title_text_size"
+                android:maxLines="1"
+                android:nextFocusDown="@+id/etConfirmPassword"
+                android:drawableStart="@drawable/ic_fiber_pin_black_24dp"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tinputConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <EditText
+                android:id="@+id/etConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_password_confirm"
+                android:imeActionId="@integer/registerImeActionID"
+                android:imeActionLabel="@string/action_sign_up"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:textSize="@dimen/title_text_size"
+                android:drawableStart="@drawable/ic_fiber_pin_black_24dp"/>
+
+        </android.support.design.widget.TextInputLayout>
+        <com.jaredrummler.materialspinner.MaterialSpinner
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/departmentSpinner"
+            android:text="@string/select_deparemnt"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tinputCompanyId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <EditText
+                android:id="@+id/etCompanyId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/companyid"
+                android:imeActionId="@integer/registerImeActionID"
+                android:textSize="@dimen/title_text_size"
+                android:imeActionLabel="@string/action_sign_up"
+                android:imeOptions="actionDone"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:drawableStart="@drawable/ic_company_36dp"/>
+
+
+            <com.dmsegypt.dms.ux.custom_view.ProgressableSpinner
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/providerTypeSpinner"
+                android:text="Select Type"
+                android:visibility="gone"/>
+
+
+            <com.jaredrummler.materialspinner.MaterialSpinner
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/pharmacySpinner"
+                android:text="Select Pharmacy"
+                android:visibility="gone"/>
+
+
+
+        </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:textColor="@color/colormain"
+            android:id="@+id/btnSignup"
+            style="?android:textAppearanceSmall"
+            android:textAllCaps="false"
+            android:textSize="@dimen/title_text_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/roundedtop"
+            android:text="@string/action_sign_up"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:padding="@dimen/margin_medium"
+            />
+
+
+    </LinearLayout>
+</ScrollView>
+</RelativeLayout>

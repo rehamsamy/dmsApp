@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- First button is the initial Fab of the menu -->
+    <!-- Don't need the title in this case, so let it empty -->
+    <item
+        android:id="@+id/main_option"
+        android:icon="@android:drawable/sym_action_chat"
+        android:title=""/>
+
+    <!-- Options buttons of the Fab menu -->
+    <item
+        android:id="@+id/single_user"
+        android:icon="@drawable/default_avata"
+        android:title="@string/single" />
+
+    <item
+        android:id="@+id/group"
+        android:icon="@drawable/default_avata"
+        android:title="@string/options_2" />
+</menu>

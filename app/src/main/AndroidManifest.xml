@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dmsegypt.dms">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <!-- <uses-permission android:name="android.permission.GET_ACCOUNTS" /> -->
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <!-- <uses-permission android:name="android.permission.READ_CONTACTS" /> -->
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!-- To pick profile image -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!-- To make otp working -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name=".app.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ux.activity.AuthActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ux.activity.ProfileActivity"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity
+            android:name=".ux.activity.SettingsActivity"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity android:name=".ux.activity.OtpActivity" />
+        <activity android:name=".ux.activity.PhoneVerficationActivity" />
+        <activity android:name=".ux.activity.AddHrRequestActivity" />
+        <activity android:name=".ux.activity.LanaguageActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ux.activity.SplashActivity"/>
+        <activity
+            android:name=".ux.activity.BaseActivityBackHeader"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity android:name=".ux.activity.BaseActivityDrawerHeader" />
+        <activity
+            android:name=".ux.activity.MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ux.activity.ProviderActivity"
+            android:theme="@style/AppTheme.Translucent.Provider" />
+        <activity
+            android:name=".ux.activity.NotificationActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ux.activity.ComplainsActivity"
+            android:label="@string/action_complaints"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".app.ImagesHandler" />
+        <activity
+            android:name=".ux.activity.FamilyMemberActivity"
+            android:label="@string/action_family"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ux.activity.AddMemberActivity"
+            android:label="@string/add_new_member"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity
+            android:name=".ux.activity.EmployeesActivity"
+            android:label="@string/action_employees"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ux.activity.NetworkActivity"
+            android:label="@string/action_network"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ux.activity.ChronicActivity"
+            android:label="@string/action_chronic"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ux.activity.CheckStatusActivity"
+            android:label="@string/action_check_status"
+            android:theme="@style/AppTheme" />
+
+        <!-- SMS Receiver -->
+        <receiver android:name=".receiver.SmsReceiver">
+            <intent-filter android:priority="99999">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Intent service -->
+        <service
+            android:name=".service.HttpService"
+            android:exported="false" />
+
+        <!-- Firebase Notifications -->
+        <service
+            android:name=".service.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".service.MyFirebaseInstanceIDService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <!-- ./Firebase Notifications -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_place_api" />
+        <meta-data
+            android:name="io.fabric.ApiKey"
+                android:value="6f835db9ac4a67b094a10b2a9dd315f2c366bcda" />
+
+        <activity
+            android:name=".ux.activity.SendApprovalActivity"
+            android:label="@string/action_requests"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity android:name=".ux.activity.ApprovalReplyActivity" />
+        <activity android:name=".ux.activity.ApprovalActivity" />
+        <activity android:name=".ux.activity.EditCardActivity" />
+        <activity android:name=".ux.activity.UserApprovalListActivity" />
+        <activity android:name=".ux.activity.UpdateViewerActivity" />
+        <activity android:name=".ux.activity.AddProviderActivity" />
+        <activity android:name=".ux.activity.AllApprovalListActivity" />
+        <activity android:name=".ux.activity.BatchActivity" />
+        <activity android:name=".ux.activity.AddFamilyMember" />
+        <activity android:name=".ux.activity.SingleApproval" />
+        <activity android:name=".ux.activity.ChatActivity" />
+        <activity android:name=".ux.activity.MessageActivity" />
+        <activity android:name=".ux.activity.MemberListActivity"/>
+        <activity android:name=".ux.activity.AdminAddAccountsActivity"/>
+        <activity android:name=".ux.activity.AdminDashboardActivity"/>
+        <activity android:name=".ux.activity.AdminLoginActivity"/>
+        <activity android:name=".ux.activity.UserAccountActivity"/>
+        <activity android:name=".ux.activity.AdminNotificationActivity">
+
+        </activity>
+        <activity android:name=".ux.activity.AdminViewAccountsActivity"/>
+        <activity
+            android:name="com.gun0912.tedpicker.ImagePickerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ImagePickerTheme" />
+        <activity android:name=".ux.activity.ListIndemnityRequests" />
+        <activity android:name=".ux.activity.EditProfileActivity" />
+        <activity
+            android:name=".ux.activity.MainMassengerActivity"
+            android:theme="@style/AppTheme.NoActionBar.NoTranslucent2" />
+        <activity android:name=".ux.activity.AddMassengerActivity" />
+        <activity android:name=".ux.activity.AddOrderActivity"></activity>
+        <activity android:name=".ux.activity.SummrayContractActivity"
+            android:windowSoftInputMode="adjustResize"
+            />
+        <activity android:name=".ux.activity.ReviewsActivity"/>
+        <activity android:name=".ux.activity.AddEditTeleSalesActivity"/>
+        <activity android:name=".ux.activity.SearchTeleSalesActivity"/>
+        <activity android:name=".ux.activity.GooglePlayReviewsActivity"/>
+        <activity android:name=".ux.activity.UserMedicineOrdersActivity">
+
+
+        </activity>
+        <activity android:name=".ux.activity.SearchAfterSalesActivity"/>
+        <activity android:name=".ux.activity.AfterSalesActivity"/>
+        <activity android:name=".ux.activity.CardValidationActivity"/>
+        <activity android:name=".ux.dialogs.AdminEditUserActivity"/>
+<activity android:name=".ux.activity.SendMedicineOrderActivty"></activity>
+        <activity android:name=".ux.activity.PharmMedicineOrdersActivity"/>
+    </application>
+
+</manifest>

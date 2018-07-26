@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="@dimen/mini_margin"
+            >
+            <TextView
+                android:textColor="@color/colormain"
+                android:id="@+id/tv_add_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/add_new_member"
+                android:textSize="@dimen/title_text_size"
+                android:textStyle="bold"
+                />
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/mini_mini_padding"
+            android:weightSum="2"
+            >
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tinputFullName"
+                android:layout_width="match_parent"
+                android:textColorHint="@color/colormain"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                >
+
+                <EditText
+                    android:textColor="@color/colormain"
+                    android:id="@+id/etFullName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/full_name"
+                    android:inputType="textPersonName"
+                    android:maxLines="1"
+                    android:nextFocusDown="@+id/etFullNamearab"
+                    android:textSize="@dimen/title_text_size"/>
+            </android.support.design.widget.TextInputLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/mini_padding"
+            android:weightSum="2"
+            >
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tinputFullNamearab"
+                android:layout_width="0dp"
+                android:textColorHint="@color/colormain"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                >
+
+                <EditText
+                    android:textColor="@color/colormain"
+                    android:id="@+id/etFullNamearab"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/full_name_arab"
+                    android:inputType="textPersonName"
+                    android:maxLines="1"
+                    android:nextFocusDown="@+id/etNationalID"
+                    android:textSize="@dimen/title_text_size"/>
+            </android.support.design.widget.TextInputLayout>
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/mini_mini_padding"
+            android:id="@+id/relationrelative"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colormain"
+                android:text="@string/relativerelation"
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/title_text_size"
+                android:gravity="center_vertical"
+                android:layout_margin="@dimen/mini_padding"
+
+                />
+
+            <com.jaredrummler.materialspinner.MaterialSpinner
+                android:id="@+id/degreespinner"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/relativerelation"
+                app:ms_arrow_tint="@color/colormain"
+                android:textColor="@color/colormain"
+                app:ms_dropdown_height="wrap_content"
+                app:ms_background_color="@color/mdtp_white"
+                app:ms_dropdown_max_height="@dimen/max_dropdown_height" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/mini_mini_padding"
+            android:id="@+id/genderrelative"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colormain"
+                android:text="@string/type"
+                android:textSize="@dimen/title_text_size"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:layout_margin="@dimen/mini_padding"
+
+                />
+
+
+
+
+            <com.jaredrummler.materialspinner.MaterialSpinner
+                android:id="@+id/genderspinner"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/Gender"
+                app:ms_arrow_tint="@color/colormain"
+                android:textColor="@color/colormain"
+                app:ms_dropdown_height="wrap_content"
+                app:ms_background_color="@color/mdtp_white"
+                app:ms_dropdown_max_height="@dimen/max_dropdown_height" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/mini_mini_padding"
+            android:weightSum="8"
+            >
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tinputAddress"
+                android:layout_width="wrap_content"
+                android:textColorHint="@color/colormain"
+                android:layout_weight="8"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/tvAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:cursorVisible="false"
+                    android:hint="@string/info_address"
+                    android:enabled="true"
+                    android:textColor="@color/colormain"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:nextFocusDown="@+id/etConfirmMobileNumber"
+                    android:textSize="@dimen/title_text_size"
+                    android:drawableRight="@mipmap/ic_location"
+
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/rowtinputRelationCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/mini_mini_padding"
+            android:weightSum="1"
+            android:visibility="gone"
+            >
+
+            <android.support.design.widget.TextInputLayout
+                android:visibility="gone"
+                android:id="@+id/tinputRelationCard"
+                android:layout_width="0dp"
+                android:textColorHint="@color/colormain"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                >
+
+                <EditText
+                    android:textColor="@color/colormain"
+                    android:id="@+id/etRelationCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/relationcard"
+                    android:inputType="text"
+                    android:maxLength="14"
+                    android:textSize="@dimen/title_text_size"
+                    android:maxLines="1" />
+            </android.support.design.widget.TextInputLayout>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/rowtinputCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/mini_mini_padding"
+            android:weightSum="1"
+            android:visibility="gone"
+            >
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tinputCard"
+                android:layout_width="0dp"
+                android:textColorHint="@color/colormain"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+                >
+
+                <EditText
+                    android:textColor="@color/colormain"
+                    android:id="@+id/etSignupCardID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/relationcard"
+                    android:inputType="text"
+                    android:textSize="@dimen/title_text_size"
+                    android:maxLength="14"
+                    android:maxLines="1" />
+            </android.support.design.widget.TextInputLayout>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/mini_mini_padding"
+            android:weightSum="100"
+            >
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tinputNationalID"
+                android:layout_width="0dp"
+                android:textColorHint="@color/colormain"
+                android:layout_height="wrap_content"
+                android:layout_weight="100"
+                >
+
+                <EditText
+                    android:textColor="@color/colormain"
+                    android:id="@+id/etNationalID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/national_id"
+                    android:inputType="number"
+                    android:maxLength="14"
+                    android:maxLines="1"
+                    android:textSize="@dimen/title_text_size"/>
+            </android.support.design.widget.TextInputLayout>
+
+        </TableRow>
+        <TableRow
+            android:id="@+id/csspinnerrelation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/mini_mini_padding"
+            android:weightSum="100"
+            >
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colormain"
+                android:text="@string/cost_center"
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/title_text_size"
+                android:gravity="center_vertical"
+                android:layout_margin="10dp"
+
+                />
+
+            <com.jaredrummler.materialspinner.MaterialSpinner
+                android:id="@+id/csspinner"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="100"
+                android:text="@string/cost_center"
+                app:ms_arrow_tint="@color/colormain"
+                android:textColor="@color/colormain"
+                app:ms_dropdown_height="wrap_content"
+                app:ms_background_color="@color/mdtp_white"
+                app:ms_dropdown_max_height="@dimen/max_dropdown_height"
+                android:textSize="@dimen/title_text_size"/>
+
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/mini_mini_padding"
+            android:weightSum="100"
+            >
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tinputBirthDate"
+                android:layout_width="0dp"
+                android:textColorHint="@color/colormain"
+                android:layout_height="wrap_content"
+                android:layout_weight="100"
+                >
+
+                <EditText
+                    android:id="@+id/etBirthDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:cursorVisible="false"
+                    android:hint="@string/prompt_birth_date"
+                    android:textColor="@color/colormain"
+                    android:inputType="date"
+                    android:maxLength="10"
+                    android:maxLines="1"
+                    android:nextFocusDown="@+id/etConfirmMobileNumber"
+                    android:textSize="@dimen/title_text_size"/>
+            </android.support.design.widget.TextInputLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/mini_mini_padding"
+            android:weightSum="100"
+            >
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tinputMobileNumber"
+                android:layout_width="0dp"
+                android:textColorHint="@color/colormain"
+                android:layout_height="wrap_content"
+                android:layout_weight="100"
+                >
+
+                <EditText
+                    android:textColor="@color/colormain"
+                    android:id="@+id/etMobileNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/mobile_number"
+                    android:inputType="phone"
+                    android:maxLength="11"
+                    android:maxLines="1"
+                    android:nextFocusDown="@+id/etConfirmMobileNumber"
+                    android:textSize="@dimen/title_text_size"/>
+            </android.support.design.widget.TextInputLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/mini_mini_padding"
+            android:weightSum="100"
+            >
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tinputConfirmMobileNumber"
+                android:layout_width="0dp"
+                android:textColorHint="@color/colormain"
+                android:layout_height="wrap_content"
+                android:layout_weight="100"
+                >
+
+                <EditText
+                    android:textColor="@color/colormain"
+                    android:id="@+id/etConfirmMobileNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/mobile_number_confirm"
+                    android:inputType="phone"
+                    android:maxLength="11"
+                    android:maxLines="1"
+                    android:nextFocusDown="@+id/etSignupEmail"
+                    android:textSize="@dimen/title_text_size"/>
+            </android.support.design.widget.TextInputLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/mini_mini_padding"
+            android:weightSum="100"
+            >
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tinputSignupEmail"
+                android:layout_width="0dp"
+                android:textColorHint="@color/colormain"
+                android:layout_height="wrap_content"
+                android:layout_weight="100"
+                >
+
+                <AutoCompleteTextView
+                    android:textColor="@color/colormain"
+                    android:id="@+id/etSignupEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_email"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:nextFocusDown="@+id/etSignupPassword"
+                    android:textSize="@dimen/title_text_size"/>
+
+            </android.support.design.widget.TextInputLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/mini_mini_padding"
+            android:weightSum="100"
+            >
+            <Button
+                android:layout_weight="100"
+                android:id="@+id/btn_add"
+                style="@style/material_button"
+                android:text="@string/action_add_member"
+                android:layout_gravity="center"
+                />
+        </TableRow>
+
+    </TableLayout>
+
+
+</merge>

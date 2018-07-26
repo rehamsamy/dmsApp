@@ -1,0 +1,211 @@
+<LinearLayout android:background="@color/colormain"
+    android:id="@+id/linearheader"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:id="@+id/row_no_tv"
+        android:textStyle="bold"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccentRed"
+        android:text="@string/no"
+        android:drawableRight="@null"
+        style="@style/summary_text_header"
+        />
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/color_white"/>
+    <LinearLayout
+        android:layout_height="40dp"
+        android:layout_width="120dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/batch_num"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            style="@style/summary_text_header"
+            android:drawableRight="@null"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/color_white"/>
+
+    <LinearLayout
+        android:layout_height="40dp"
+        android:layout_width="100dp"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/prv_code"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/sum_prvcode"
+            android:drawableRight="@null"
+
+            style="@style/summary_text_header"
+
+
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/color_white"/>
+    <LinearLayout
+        android:layout_height="40dp"
+        android:layout_width="100dp"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/prv_name"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/sum_prvname"
+            style="@style/summary_text_header"
+            android:drawableRight="@null"
+            />
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/color_white"/>
+
+    <LinearLayout
+        android:layout_height="40dp"
+        android:layout_width="140dp"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/sum_systemamt"
+            style="@style/summary_text_header"
+            android:id="@+id/System_amt"
+            android:drawableRight="@null"
+
+
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/color_white"/>
+
+    <LinearLayout
+        android:layout_height="40dp"
+        android:layout_width="140dp"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/sum_checkamt"
+            style="@style/summary_text_header"
+            android:id="@+id/check_amount"
+            android:drawableRight="@null"
+
+
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/color_white"/>
+
+    <LinearLayout
+        android:layout_height="40dp"
+        android:layout_width="120dp"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/sum_checkstatus"
+            style="@style/summary_text_header"
+            android:id="@+id/check_status"
+            android:drawableRight="@null"
+
+
+            />
+
+    </LinearLayout>
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/color_white"/>
+
+    <LinearLayout
+        android:layout_height="40dp"
+        android:layout_width="140dp"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/sum_systemno"
+            style="@style/summary_text_header"
+            android:id="@+id/system_no"
+            android:drawableRight="@null"
+
+
+            />
+
+    </LinearLayout>
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/color_white"/>
+
+
+    <LinearLayout
+        android:layout_height="40dp"
+        android:layout_width="140dp"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/sum_datastatment"
+            style="@style/summary_text_header"
+            android:id="@+id/data_statement"
+            android:drawableRight="@null"
+
+
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/color_white"/>
+
+    <LinearLayout
+        android:layout_height="40dp"
+        android:layout_width="120dp"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/sum_manualno"
+            android:drawableRight="@null"
+            style="@style/summary_text_header"
+            android:id="@+id/manual_no"
+
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

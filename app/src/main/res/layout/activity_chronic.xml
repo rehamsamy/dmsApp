@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.dmsegypt.dms.ux.activity.ChronicActivity">
+
+
+
+    <include layout="@layout/layout_chronic_user"
+    android:id="@+id/user_chronic_layout"
+    android:visibility="gone"
+    />
+    <include layout="@layout/layout_chronic_hr"
+        android:id="@+id/hr_chronic_layout"
+        android:visibility="gone"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_list_"
+        app:fabSize="normal"
+        app:backgroundTint="@color/colormain"
+        android:visibility="gone"
+         />
+
+</android.support.design.widget.CoordinatorLayout>

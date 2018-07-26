@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:layout_height="50dp" android:layout_width="match_parent">
+    <com.jaredrummler.materialspinner.MaterialSpinner
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/spinner"/>
+    <com.dmsegypt.dms.ux.custom_view.DotLoadingView
+        android:id="@+id/progress_dots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|center"
+        />
+    <ImageView
+        android:id="@+id/retry_imgv"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_gravity="end|center_vertical"
+        android:layout_margin="8dp"
+        android:src="@drawable/ic_refresh"
+         />
+
+
+</merge>

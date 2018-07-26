@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_parent"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    android:padding="5dp"
+    android:background="@color/mdtp_white">
+
+
+    <TextView
+        android:textColor="@color/colormain"
+        android:id="@+id/tv_member_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif"
+        android:maxLines="2"
+        android:paddingBottom="5dp"
+        android:paddingEnd="5dp"
+        android:paddingStart="5dp"
+        android:textAlignment="viewStart"
+        android:textSize="@dimen/title_text_size"
+        android:textStyle="normal|bold"
+        tools:text="Product Name "
+        />
+
+    <TextView
+        android:id="@+id/tv_card_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingEnd="5dp"
+        android:paddingStart="5dp"
+        android:textAlignment="viewStart"
+        android:textSize="@dimen/title_text_size"
+        tools:text="Card Id"
+        android:textColor="@color/colormain"
+        android:layout_below="@+id/tv_member_name"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:contentDescription="@string/upload_image"
+
+        android:id="@+id/ib_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="10dp"
+        android:background="@android:drawable/ic_menu_delete"
+        android:scaleType="fitXY" />
+
+</RelativeLayout>

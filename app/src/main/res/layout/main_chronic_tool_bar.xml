@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:id="@+id/toolbar"
+            android:layout_height="@dimen/toolbar_height"
+            app:navigationIcon="@drawable/ic_toolbar_back_light"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+
+            >
+                <ImageButton
+                    android:id="@+id/iBtnGuide"
+                    style="@style/material_image_button"
+                    android:src="@mipmap/ic_info"
+                    tools:ignore="ContentDescription"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="right"
+
+                    />
+
+
+        </android.support.v7.widget.Toolbar>
+
+
+</merge>

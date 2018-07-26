@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mdtp_white"
+        >
+        <android.support.v7.widget.Toolbar
+
+            android:layout_width="match_parent"
+            android:id="@+id/profiletoolbar"
+            android:layout_height="@dimen/toolbar_height"
+            android:background="@drawable/logotitle"
+            app:layout_collapseMode="pin"
+            app:navigationIcon="@drawable/ic_toolbar_back_light"
+            app:popupTheme="@style/PopupMenuTheme"
+            app:titleTextColor="@color/colorLine_light">
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/action_approve"
+                android:layout_gravity="center"
+                android:textSize="@dimen/toolbar_title_size"
+                android:textColor="@color/mdtp_white"
+                android:id="@+id/toolbar_title" />
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+</merge>

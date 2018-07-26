@@ -1,0 +1,124 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/agentCardContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/mini_margin"
+        card_view:cardCornerRadius="@dimen/cardview_default_radius">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="?selectableItemBackground"
+            >
+
+            <ImageView
+                android:id="@+id/thumbnail"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:background="@color/colorTextGrey2nd"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:maxWidth="100dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/no_image"
+                tools:ignore="ContentDescription" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="@dimen/little_margin">
+
+                <TextView
+
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/little_margin"
+                    android:maxLines="1"
+                    android:textSize="18sp"
+                    tools:text="Title" />
+
+                <TextView
+                    android:id="@+id/details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/mini_margin"
+                    android:maxLines="2"
+                    android:textColor="@color/colormain"
+                    android:textSize="@dimen/title_text_size"
+                    android:visibility="gone"
+                    tools:text="Some Details is here" />
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/mini_margin"
+                    android:maxLines="2"
+                    android:paddingBottom="@dimen/mini_margin"
+                    android:paddingEnd="@dimen/mini_margin"
+                    android:paddingStart="0dp"
+                    android:paddingTop="@dimen/mini_margin"
+                    android:textColor="@color/black_54"
+                    android:textSize="14sp"
+                    tools:text="anywhere" />
+
+                <TextView
+                    android:id="@+id/phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/mini_margin"
+                    android:maxLines="1"
+                    android:paddingBottom="@dimen/mini_margin"
+                    android:paddingEnd="@dimen/mini_margin"
+                    android:paddingStart="0dp"
+                    android:paddingTop="@dimen/mini_margin"
+                    android:textColor="@color/colormain"
+                    android:textSize="@dimen/title_text_size"
+                    tools:text="+20 115264"
+                    android:autoLink="phone"
+                    android:drawableStart="@drawable/ic_call"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/little_margin"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivNavigate"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="top|end"
+                android:background="?attr/selectableItemBackground"
+                android:contentDescription="@string/type"
+                android:padding="@dimen/mini_margin"
+                android:src="@drawable/ic_navigation" />
+
+            <ImageView
+                android:id="@+id/ivType"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom|end"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/type"
+                android:padding="@dimen/mini_margin"
+                android:src="@drawable/radiology" />
+        </FrameLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

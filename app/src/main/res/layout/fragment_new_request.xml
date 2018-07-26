@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/editText_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@android:color/white"
+            android:gravity="start"
+            android:hint="@string/description_hint"
+            android:textColorHint="@color/colormain"
+            android:inputType="textMultiLine"
+            android:lines="4"
+            android:maxLines="4"
+            android:padding="4dp"
+            android:scrollbars="vertical"
+            android:textSize="@dimen/title_text_size"
+            />
+
+        <Button
+            android:id="@+id/btn_upload"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/editText_description"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/roundedtop"
+            android:padding="4dp"
+            android:textSize="@dimen/title_text_size"
+            android:text="@string/upload_image"
+            android:textAllCaps="false"
+            android:textColor="@color/colormain"/>
+
+        <ImageView
+            android:contentDescription="@string/upload_image"
+            android:id="@+id/img_imgview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/btn_upload"
+            android:layout_margin="20dp"/>
+        <Button
+            android:layout_below="@id/img_imgview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/send_request"
+            android:textAllCaps="false"
+            android:textSize="@dimen/title_text_size"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/btnaddrequest"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+
+</ScrollView>

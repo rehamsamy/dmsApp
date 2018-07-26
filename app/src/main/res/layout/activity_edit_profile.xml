@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <ImageButton
+
+        android:id="@+id/iBtnCloseBtn"
+        style="@style/material_image_button"
+        android:src="@mipmap/ic_close_light"
+        tools:ignore="ContentDescription" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/normal_margin">
+
+            <TextView
+                style="@style/title_text"
+                android:layout_marginBottom="@dimen/mini_margin"
+                android:layout_marginLeft="@dimen/mini_icon_size"
+                android:layout_marginRight="@dimen/mini_icon_size"
+                android:layout_marginTop="@dimen/normal_margin"
+                android:text="@string/action_edit_profile"
+                android:textColor="@color/colormain"
+                android:textSize="@dimen/design_title_text_size"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.dmsegypt.dms.ux.custom_view.CircleImageView
+                    android:id="@+id/civAvatar"
+                    android:layout_width="@dimen/design_icon_size"
+                    android:layout_height="@dimen/design_icon_size"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="@dimen/big_margin"
+                    android:background="@drawable/user"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/user"
+                    app:civ_fill_color="@color/colorTextGrey" />
+
+                <ProgressBar
+                    android:id="@+id/mprogress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tinputEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colormain">
+
+                <EditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_email"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:textSize="@dimen/title_text_size" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tinputMobileNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:textColorHint="@color/colormain">
+
+                <EditText
+                    android:id="@+id/etMobileNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/mobile_number"
+                    android:inputType="phone"
+                    android:maxLength="11"
+                    android:maxLines="1"
+                    android:textSize="@dimen/title_text_size" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnSubmit"
+                style="?android:textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/roundedtop"
+                android:enabled="false"
+                android:padding="@dimen/normal_margin"
+                android:text="@string/action_edit"
+                android:textAllCaps="false"
+                android:textSize="@dimen/title_text_size"
+                android:textStyle="bold"
+                android:textColor="@color/colormain"
+
+                />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

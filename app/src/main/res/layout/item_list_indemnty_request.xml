@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="6dp"
+    app:cardCornerRadius="6dp"
+    android:layout_marginBottom="@dimen/mini_padding"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="8dp"
+        android:paddingBottom="@dimen/mini_padding"
+        >
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/gallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.dmsegypt.dms.ux.custom_view.freedomSizeView.FreedomImageView
+        android:id="@+id/imageView"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="260dp"
+        android:scaleType="fitXY"
+        android:background="@drawable/no_image" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/req_title"
+                style="@style/title_text"
+                android:text="@string/Title"
+                android:layout_marginLeft="@dimen/mini_margin"
+                />
+            <TextView
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/req_date"
+                style="@style/title_text"
+                android:text="@string/Title"
+                android:layout_marginLeft="@dimen/mini_margin"
+                />
+        </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/req_description"
+        style="@style/title_text"
+        android:text="@string/description"
+        android:layout_marginLeft="@dimen/mini_margin"
+        />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/req_emp_name"
+                style="@style/title_text"
+                android:text="@string/card_id"
+                android:layout_marginLeft="@dimen/mini_margin"
+                android:paddingRight="@dimen/mini_padding"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/req_cardid"
+                style="@style/title_text"
+                android:text="@string/card_id"
+                android:layout_marginLeft="@dimen/mini_margin"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

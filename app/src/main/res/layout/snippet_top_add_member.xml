@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/colorPrimary_light"
+        >
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:id="@+id/profiletoolbar"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <ImageButton
+                    android:id="@+id/iBtnCloseBtn"
+                    style="@style/material_toolbar_image_button"
+                    android:src="@mipmap/ic_close_light"
+                    android:layout_centerVertical="true"
+                    tools:ignore="ContentDescription"
+                    />
+                <ImageButton
+                    android:id="@+id/iBtnGuide"
+                    style="@style/material_toolbar_image_button"
+                    android:src="@mipmap/ic_info"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    tools:ignore="ContentDescription"/>
+
+            </RelativeLayout>
+            </android.support.v7.widget.Toolbar>
+
+
+
+
+    </android.support.design.widget.AppBarLayout>
+
+</merge>

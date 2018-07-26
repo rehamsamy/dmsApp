@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    android:layout_marginBottom="8dp"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    app:cardMaxElevation="6dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="false"
+    app:contentPadding="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+
+        >
+        <LinearLayout
+            android:id="@+id/linear_state"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:visibility="gone"
+            >
+            <View
+                android:layout_gravity="center"
+                android:layout_width="0.5dp"
+                android:layout_height="15dp"
+                android:layout_below="@android:id/text1"
+
+                android:background="@android:color/darker_gray" />
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+            <ImageView
+                android:id="@+id/iv_order_done"
+                 android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/track_done"
+                />
+            <View
+                android:layout_gravity="center"
+                android:layout_width="0.5dp"
+                android:layout_height="15dp"
+                android:layout_below="@android:id/text1"
+
+                android:background="@android:color/darker_gray" />
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/order_done_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/dp_10"
+                android:text="@string/order_date"
+                />
+            <ImageView
+                android:id="@+id/iv_order_pending"
+
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/track_pending"                />
+            <View
+                android:layout_gravity="center"
+                android:layout_width="0.5dp"
+                android:layout_height="15dp"
+                android:layout_below="@android:id/text1"
+
+                android:background="@android:color/darker_gray" />
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/order_updated_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/dp_10"
+                android:text="@string/order_date"
+                />
+            <ImageView
+                android:id="@+id/iv_order_start"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/track_start"/>
+                </LinearLayout>
+            <View
+                android:layout_gravity="center"
+                android:layout_width="0.5dp"
+                android:layout_height="15dp"
+                android:layout_below="@android:id/text1"
+                android:background="@android:color/darker_gray" />
+            <TextView
+                android:id="@+id/order_created_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/dp_10"
+                android:text="@string/order_date"
+                />
+
+        </LinearLayout>
+        <com.dmsegypt.dms.ux.custom_view.VerticalTextView
+            android:id="@+id/track_order"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textSize="@dimen/title_text_size"
+            android:text="@string/track_order"
+            android:background="@color/colormain"
+            android:textColor="@color/mdtp_white"
+            android:textAllCaps="false"
+            android:visibility="visible"
+            />
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:paddingTop="8dp"
+            tools:ignore="RtlHardcoded">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/vip_imgv"
+                android:src="@drawable/ic_vip"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/order_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="@string/order_date"
+                android:textStyle="italic"
+                android:layout_marginEnd="4dp"/>
+
+            <TextView
+                android:id="@+id/comp_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/companyname"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:textStyle="bold"
+                android:layout_below="@+id/vip_imgv"
+                android:layout_alignParentStart="true" />
+
+
+            <TextView
+                android:id="@+id/tv_order_notes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/comp_name_tv"
+                android:text="@string/notes_hint"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                />
+
+            <RelativeLayout
+                android:id="@+id/rel_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_order_notes"
+                android:gravity="center"
+                android:layout_marginTop="8dp">
+
+                <RelativeLayout
+
+                    android:id="@+id/linear_location"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/image_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_my_location"
+                        android:tint="@color/colormain"
+                        android:layout_marginEnd="4dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_comp_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="4dp"
+                        android:layout_toRightOf="@+id/image_location"
+                        android:gravity="bottom"
+                        android:text="@string/location"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textStyle="italic" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/linear_person"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_below="@id/linear_location">
+
+                    <ImageView
+                        android:id="@+id/image_person"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_person"
+                        android:tint="@color/colormain"
+                        android:layout_marginEnd="4dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_comp_person"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="4dp"
+                        android:layout_toRightOf="@+id/image_person"
+                        android:gravity="bottom"
+                        android:text="@string/username"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textStyle="italic"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_below="@id/linear_person">
+
+                    <ImageView
+                        android:id="@+id/image_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_phone"
+                        android:tint="@color/colormain"
+                        android:layout_marginEnd="4dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_comp_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="4dp"
+                        android:layout_toRightOf="@+id/image_phone"
+                        android:gravity="bottom"
+                        android:text="@string/contact_phone"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textStyle="italic" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/button_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/rel_location"
+                android:layout_marginBottom="@dimen/mini_margin"
+                android:layout_marginEnd="@dimen/mini_margin"
+                android:layout_marginStart="@dimen/mini_margin"
+                android:background="@color/black_20"
+                android:padding="5dp"
+                android:text="@string/Pending"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/mdtp_white" />
+
+            <!--
+            <TextView
+                android:visibility="gone"
+                android:gravity="bottom"
+                android:layout_below="@id/button_reasons"
+                android:id="@+id/tv_order_reasons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="DELIVERORDER - DELIVER CHECKS"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textStyle="normal" />
+-->
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>
